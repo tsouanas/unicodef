@@ -2,7 +2,7 @@
 
 This project consist of:
 
-* `unicodef.sh`: a script which given input files generates with definitions of unicode sequences for use in XCompose, Vim, etc.;
+* `unicodef.sh`: a script which given input files generates with definitions of unicode sequences for use in Xorg (via XCompose), Vim, etc.;
 * `defs/*`: my own (mostly [ThaTeX] influenced) input files for that script;
 * `outfiles/*`: the "compiled" outputs of my input files, ready to use.
 
@@ -16,7 +16,7 @@ See [unicodefs.md] for a list of all sequences defined by the provided files in 
 
 **tl;dr:** Just place `build/unicodefs.XCompose` and `build/unicodefs.vim` in the appropriate places and you're good to go.  No other file is needed.
 
-### for X
+### for Xorg
 Place `unicodefs.XCompose` somewhere (for example, in `~/.unicodef/`) and have your `.XCompose` include it:
 ```
 include "%H/.unicodef/unicodefs.XCompose"
