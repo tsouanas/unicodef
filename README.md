@@ -72,7 +72,7 @@ Using make(1):
 * `make cleanall` removes *all* generated files.
 
 
-[defs]:        src/defs
-[unicodef.md]: build/unicodef.md
-[ThaTeX]:      https://github.com/tsouanas/thatex
+[defs]:         src/defs
+[unicodefs.md]: outfiles/unicodefs.md
+[ThaTeX]:       https://github.com/tsouanas/thatex
 
