@@ -1,14 +1,17 @@
 default:
 	cd src \
-		&& sh mkunicodef.sh \
-		&& mv defs.seq defs.exp unicodef.md XCompose-unicodef unicodef.vim ../build
+		&& sh unicodef.sh ../defs/* \
+		&& cp -p build/*.md build/*.XCompose build/*.vim ../outfiles/
 
 install:
 	mkdir -p ~/.unicodef \
-		&& cp -p build/XCompose-unicodef build/unicodef.vim ~/.unicodef/
+		&& cp -p outfiles/* ~/.unicodef
+
+uninstall:
+	rm -rf ~/.unicodef
 
 clean:
-	rm -f build/defs.seq build/defs.exp
+	rm -rf src/build
 
 cleanall: clean
-	rm -f build/unicodef.md build/XCompose-unicodef build/unicodef.vim
+	rm -f outfiles/*

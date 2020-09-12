@@ -10,4 +10,4 @@ s/-/<minus>/g
 s/(/<parenleft>/g
 s/)/<parenright>/g
 s/^/<Multi_key><Multi_key>/g
-s/$/ : /g
+s/$/<space> : /g
