@@ -57,7 +57,8 @@ It creates the following files in `build/`:
 
 The files `defs.seq` and `defs.exp` hold the sequences and their expansions respectively.  Although not needed anywhere, they might be useful.
 
-There's a `Makefile` using `make(1)` to...:
+Using make(1):
+
 * `make` runs `mkunicodef.sh`
 * `make install` copies the useful generated files to `~/.unicodef`;
 * `make clean` removes the probably useless generated files;
