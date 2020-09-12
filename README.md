@@ -2,9 +2,9 @@
 
 This project consist of:
 
-* a script which given input files generates with definitions of unicode sequences for use in XCompose, Vim, etc.;
-* my own (mostly [ThaTeX] influenced) input files for that script;
-* the "compiled" output for my input files, ready to use;
+* `unicodef.sh`: a script which given input files generates with definitions of unicode sequences for use in XCompose, Vim, etc.;
+* `defs/*`: my own (mostly [ThaTeX] influenced) input files for that script;
+* `outfiles/*`: the "compiled" outputs of my input files, ready to use.
 
 
 ## Provided definitions of sequences
