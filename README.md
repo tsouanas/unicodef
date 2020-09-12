@@ -38,7 +38,7 @@ source ~/.unicodef/unicodefs.vim
 
 ## Usage
 
-### in X
+### in Xorg
 To use a sequence σ type <kbd>AltGr</kbd><kbd>AltGr</kbd>σ<kbd>space</kbd>.
 E.g.: Typing <kbd>AltGr</kbd><kbd>AltGr</kbd><kbd>n</kbd><kbd>a</kbd><kbd>t</kbd><kbd>s</kbd><kbd>space</kbd> simply writes `ℕ`.
 
@@ -68,6 +68,7 @@ Using make(1):
 
 * `make` runs `unicodef.sh` using all of `defs/*` as input files ;
 * `make install` copies the generated files to `~/.unicodef/`;
+* `make uninstall` removes `~/.unicodef/`;
 * `make clean` removes the auxiliary generated files;
 * `make cleanall` removes *all* generated files.
 
