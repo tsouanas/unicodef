@@ -1,0 +1,6 @@
+# example ~/.XCompose file for use with unicodef
+
+include "%H/.unicodef/XCompose-unicodef"
+
+# Place your definitions below this line
+
