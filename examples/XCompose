@@ -1,6 +1,10 @@
 # example ~/.XCompose file for use with unicodef
 
+# locale-specific default Compose file
+include "%L"
+
+# unicodef
 include "%H/.unicodef/unicodefs.XCompose"
 
-# Place your definitions below this line
+# place your definitions below this line
 
