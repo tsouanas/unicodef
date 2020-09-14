@@ -1,0 +1,4 @@
+* Some sequences don't work as expected via Compose:
+  e.g. trying to use "implies", as soon as I hit the 'p'
+       character, the process is broken and a single 'p'
+       appears on the screen.
