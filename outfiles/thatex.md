@@ -30,6 +30,9 @@
 | `implies` | ⇒ |
 | `implied` | ⇐ |
 | `iff` | ⇔ |
+| `timplies` | ⟹ |
+| `timplied` | ⟸ |
+| `tiff` | ⟺ |
 | `vimplies` | ⇓ |
 | `vimplied` | ⇑ |
 | `viff` | ⇕ |
@@ -114,12 +117,17 @@
 | `from` | ← |
 | `parto` | ⇀ |
 | `mapsto` | ↦ |
+| `mapsfrom` | ↤ |
+| `tmapsto` | ⟼ |
+| `tmapsfrom` | ⟻ |
 | `parfrom` | ↼ |
 | `rest` | ↾ |
 | `surto` | ↠ |
 | `surfrom` | ↞ |
 | `injto` | ↣ |
 | `injfrom` | ↢ |
+| `embto` | ↪ |
+| `embfrom` | ↩ |
 | `bijto` | ⤖ |
 | `relto` | ⇾ |
 | `relfrom` | ⇽ |

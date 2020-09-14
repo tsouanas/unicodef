@@ -337,6 +337,9 @@ inoremap \\nexists ∄
 inoremap \\implies ⇒
 inoremap \\implied ⇐
 inoremap \\iff ⇔
+inoremap \\timplies ⟹
+inoremap \\timplied ⟸
+inoremap \\tiff ⟺
 inoremap \\vimplies ⇓
 inoremap \\vimplied ⇑
 inoremap \\viff ⇕
@@ -421,12 +424,17 @@ inoremap \\to →
 inoremap \\from ←
 inoremap \\parto ⇀
 inoremap \\mapsto ↦
+inoremap \\mapsfrom ↤
+inoremap \\tmapsto ⟼
+inoremap \\tmapsfrom ⟻
 inoremap \\parfrom ↼
 inoremap \\rest ↾
 inoremap \\surto ↠
 inoremap \\surfrom ↞
 inoremap \\injto ↣
 inoremap \\injfrom ↢
+inoremap \\embto ↪
+inoremap \\embfrom ↩
 inoremap \\bijto ⤖
 inoremap \\relto ⇾
 inoremap \\relfrom ⇽
