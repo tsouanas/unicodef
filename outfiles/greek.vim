@@ -11,7 +11,7 @@ inoremap \\Kappa Κ
 inoremap \\Lambda Λ
 inoremap \\Mu Μ
 inoremap \\Nu Ν
-inoremap \\Ksi Ξ
+inoremap \\Xi Ξ
 inoremap \\Omicron Ο
 inoremap \\Pi Π
 inoremap \\Rho Ρ
@@ -39,7 +39,7 @@ inoremap \\curkappa ϰ
 inoremap \\lambda λ
 inoremap \\mu μ
 inoremap \\nu ν
-inoremap \\ksi ξ
+inoremap \\xi ξ
 inoremap \\omicron ο
 inoremap \\pi π
 inoremap \\curpi ϖ
