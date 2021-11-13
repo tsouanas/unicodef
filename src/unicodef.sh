@@ -33,8 +33,8 @@ for defs in "$@"; do
 
     # markdown
     printf '\n## %s defs\n' "${defsname}" | tee -a "$BUILDDIR/unicodefs.md"  >  "$BUILDDIR/${defsname}.md"
-    sed 's/^\(.*\)$/\| `\1` \|/g' raw.seq > tmp.seq
-    sed 's/$/ \|/'                raw.exp > tmp.exp
+    sed 's/^\(.*\)$/\| `\1` \|/g' raw.seq     > tmp.seq
+    sed 's/\|/\\\|/' raw.exp | sed 's/$/ \|/' > tmp.exp
     printf '| Sequence | Expansion |\n'   | tee -a "$BUILDDIR/unicodefs.md"  >> "$BUILDDIR/${defsname}.md"
     printf '| :------- | :-------: |\n'   | tee -a "$BUILDDIR/unicodefs.md"  >> "$BUILDDIR/${defsname}.md"
     paste -d ' ' tmp.seq tmp.exp          | tee -a "$BUILDDIR/unicodefs.md"  >> "$BUILDDIR/${defsname}.md"
