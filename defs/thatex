@@ -89,6 +89,7 @@ ocross            ⊗
 odiv              ⊘
 odot              ⊙
 dotminus          ∸
+monus             ∸
 
 # sets
 emptyset          Ø
@@ -108,12 +109,14 @@ disjunion         ⊎
 Disjunion         ⨄
 subset            ⊆
 supset            ⊇
+psubset           ⊊
+psupset           ⊋
+hsubset           ⊂
+hsupset           ⊃
 nsubset           ⊈
 nsupset           ⊉
 subsetneq         ⊊
 supsetneq         ⊋
-psubset           ⊊
-psupset           ⊋
 pset              ℘
 aleph             ℵ
 beth              ℶ

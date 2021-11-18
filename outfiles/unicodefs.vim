@@ -394,6 +394,7 @@ inoremap \\ocross ⊗
 inoremap \\odiv ⊘
 inoremap \\odot ⊙
 inoremap \\dotminus ∸
+inoremap \\monus ∸
 inoremap \\emptyset Ø
 inoremap \\bools 𝔹
 inoremap \\nats ℕ
@@ -411,12 +412,14 @@ inoremap \\disjunion ⊎
 inoremap \\Disjunion ⨄
 inoremap \\subset ⊆
 inoremap \\supset ⊇
+inoremap \\psubset ⊊
+inoremap \\psupset ⊋
+inoremap \\hsubset ⊂
+inoremap \\hsupset ⊃
 inoremap \\nsubset ⊈
 inoremap \\nsupset ⊉
 inoremap \\subsetneq ⊊
 inoremap \\supsetneq ⊋
-inoremap \\psubset ⊊
-inoremap \\psupset ⊋
 inoremap \\pset ℘
 inoremap \\aleph ℵ
 inoremap \\beth ℶ

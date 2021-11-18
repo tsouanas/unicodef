@@ -87,6 +87,7 @@
 | `odiv` | ⊘ |
 | `odot` | ⊙ |
 | `dotminus` | ∸ |
+| `monus` | ∸ |
 | `emptyset` | Ø |
 | `bools` | 𝔹 |
 | `nats` | ℕ |
@@ -104,12 +105,14 @@
 | `Disjunion` | ⨄ |
 | `subset` | ⊆ |
 | `supset` | ⊇ |
+| `psubset` | ⊊ |
+| `psupset` | ⊋ |
+| `hsubset` | ⊂ |
+| `hsupset` | ⊃ |
 | `nsubset` | ⊈ |
 | `nsupset` | ⊉ |
 | `subsetneq` | ⊊ |
 | `supsetneq` | ⊋ |
-| `psubset` | ⊊ |
-| `psupset` | ⊋ |
 | `pset` | ℘ |
 | `aleph` | ℵ |
 | `beth` | ℶ |
