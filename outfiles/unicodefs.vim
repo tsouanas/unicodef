@@ -525,3 +525,10 @@ inoremap \\up ↑
 inoremap \\down ↓
 inoremap \\Ell ℒ
 inoremap \\ell ℓ
+inoremap \\bang !
+inoremap \\gnab ¡
+inoremap \\bbang ‼
+inoremap \\ibang ‽
+inoremap \\ignab ⸘
+inoremap \\abang ⁈
+inoremap \\bask ⁉

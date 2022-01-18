@@ -90,6 +90,8 @@ odiv              ⊘
 odot              ⊙
 dotminus          ∸
 monus             ∸
+uplus             ⊎
+Uplus             ⨄
 
 # sets
 emptyset          Ø
@@ -107,6 +109,8 @@ inter             ∩
 union             ∪
 disjunion         ⊎
 Disjunion         ⨄
+dunion            ⊎
+Dunion            ⨄
 subset            ⊆
 supset            ⊇
 psubset           ⊊

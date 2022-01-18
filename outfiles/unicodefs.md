@@ -543,3 +543,10 @@
 | `down` | ↓ |
 | `Ell` | ℒ |
 | `ell` | ℓ |
+| `bang` | ! |
+| `gnab` | ¡ |
+| `bbang` | ‼ |
+| `ibang` | ‽ |
+| `ignab` | ⸘ |
+| `abang` | ⁈ |
+| `bask` | ⁉ |
