@@ -2,7 +2,7 @@
 
 This project consist of:
 
-* `unicodef.sh`: a script which given input files generates with definitions of unicode sequences for use in X11 (via XCompose), Vim, etc.;
+* `unicodef.sh`: a script which, given appropriate input files, generates definitions of unicode sequences for use in X11 (via XCompose) and Vim;
 * `defs/*`: my own (mostly [ThaTeX] influenced) input files for that script;
 * `outfiles/*`: the "compiled" outputs of my input files, ready to use.
 
