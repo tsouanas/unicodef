@@ -84,6 +84,8 @@ inoremap \\odiv ⊘
 inoremap \\odot ⊙
 inoremap \\dotminus ∸
 inoremap \\monus ∸
+inoremap \\uplus ⊎
+inoremap \\Uplus ⨄
 inoremap \\emptyset Ø
 inoremap \\bools 𝔹
 inoremap \\nats ℕ
@@ -99,6 +101,8 @@ inoremap \\inter ∩
 inoremap \\union ∪
 inoremap \\disjunion ⊎
 inoremap \\Disjunion ⨄
+inoremap \\dunion ⊎
+inoremap \\Dunion ⨄
 inoremap \\subset ⊆
 inoremap \\supset ⊇
 inoremap \\psubset ⊊

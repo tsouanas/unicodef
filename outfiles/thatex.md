@@ -88,6 +88,8 @@
 | `odot` | ⊙ |
 | `dotminus` | ∸ |
 | `monus` | ∸ |
+| `uplus` | ⊎ |
+| `Uplus` | ⨄ |
 | `emptyset` | Ø |
 | `bools` | 𝔹 |
 | `nats` | ℕ |
@@ -103,6 +105,8 @@
 | `union` | ∪ |
 | `disjunion` | ⊎ |
 | `Disjunion` | ⨄ |
+| `dunion` | ⊎ |
+| `Dunion` | ⨄ |
 | `subset` | ⊆ |
 | `supset` | ⊇ |
 | `psubset` | ⊊ |
