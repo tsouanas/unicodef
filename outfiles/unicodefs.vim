@@ -331,7 +331,7 @@ inoremap \\qed ∎
 inoremap \\leq ≤
 inoremap \\geq ≥
 inoremap \\neq ≠
-inoremap \\div |
+inoremap \\div ∣
 inoremap \\ndiv ∤
 inoremap \\forall ∀
 inoremap \\exists ∃

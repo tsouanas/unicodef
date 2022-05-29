@@ -24,7 +24,7 @@
 | `leq` | ≤ |
 | `geq` | ≥ |
 | `neq` | ≠ |
-| `div` | \| |
+| `div` | ∣ |
 | `ndiv` | ∤ |
 | `forall` | ∀ |
 | `exists` | ∃ |
