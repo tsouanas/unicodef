@@ -15,6 +15,8 @@ inoremap \\lbag ⟅
 inoremap \\rbag ⟆
 inoremap \\lsem ⟦
 inoremap \\rsem ⟧
+inoremap \\lnorm ‖
+inoremap \\rnorm ‖
 inoremap \\halmos ∎
 inoremap \\qed ∎
 inoremap \\leq ≤

@@ -19,6 +19,8 @@
 | `rbag` | ⟆ |
 | `lsem` | ⟦ |
 | `rsem` | ⟧ |
+| `lnorm` | ‖ |
+| `rnorm` | ‖ |
 | `halmos` | ∎ |
 | `qed` | ∎ |
 | `leq` | ≤ |
