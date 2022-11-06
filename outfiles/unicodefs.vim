@@ -309,10 +309,9 @@ inoremap \\pirate ☠
 inoremap \\poo 💩
 inoremap \\smooch ⍣
 inoremap \\zzz 💤
-inoremap \\showspace ␣
-inoremap \\spacechar ␣
+inoremap \\spc ␣
+inoremap \\blank ␣
 inoremap \\nbsp  
-inoremap \\~  
 inoremap \\return ⏎
 inoremap \\lqua ⌜
 inoremap \\rqua ⌝

@@ -1,7 +1,6 @@
-inoremap \\showspace ␣
-inoremap \\spacechar ␣
+inoremap \\spc ␣
+inoremap \\blank ␣
 inoremap \\nbsp  
-inoremap \\~  
 inoremap \\return ⏎
 inoremap \\lqua ⌜
 inoremap \\rqua ⌝

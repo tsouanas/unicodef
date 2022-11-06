@@ -2,10 +2,9 @@
 ## thatex defs
 | Sequence | Expansion |
 | :------- | :-------: |
-| `showspace` | ␣ |
-| `spacechar` | ␣ |
+| `spc` | ␣ |
+| `blank` | ␣ |
 | `nbsp` |   |
-| `~` |   |
 | `return` | ⏎ |
 | `lqua` | ⌜ |
 | `rqua` | ⌝ |
