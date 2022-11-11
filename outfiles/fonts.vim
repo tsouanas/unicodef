@@ -245,3 +245,4 @@ inoremap \\_t ₜ
 inoremap \\_u ᵤ
 inoremap \\_v ᵥ
 inoremap \\_x ₓ
+inoremap \\blank ⠀

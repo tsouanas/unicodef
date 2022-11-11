@@ -245,6 +245,7 @@ inoremap \\_t ₜ
 inoremap \\_u ᵤ
 inoremap \\_v ᵥ
 inoremap \\_x ₓ
+inoremap \\blank ⠀
 inoremap \\Alpha Α
 inoremap \\Beta Β
 inoremap \\Gamma Γ
@@ -310,7 +311,6 @@ inoremap \\poo 💩
 inoremap \\smooch ⍣
 inoremap \\zzz 💤
 inoremap \\spc ␣
-inoremap \\blank ␣
 inoremap \\nbsp  
 inoremap \\return ⏎
 inoremap \\lqua ⌜

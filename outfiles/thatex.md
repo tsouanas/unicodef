@@ -3,7 +3,6 @@
 | Sequence | Expansion |
 | :------- | :-------: |
 | `spc` | ␣ |
-| `blank` | ␣ |
 | `nbsp` |   |
 | `return` | ⏎ |
 | `lqua` | ⌜ |

@@ -251,6 +251,7 @@
 | `_u` | ᵤ |
 | `_v` | ᵥ |
 | `_x` | ₓ |
+| `blank` | ⠀ |
 
 ## greek defs
 | Sequence | Expansion |
@@ -328,7 +329,6 @@
 | Sequence | Expansion |
 | :------- | :-------: |
 | `spc` | ␣ |
-| `blank` | ␣ |
 | `nbsp` |   |
 | `return` | ⏎ |
 | `lqua` | ⌜ |

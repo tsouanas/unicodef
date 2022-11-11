@@ -1,5 +1,4 @@
 inoremap \\spc ␣
-inoremap \\blank ␣
 inoremap \\nbsp  
 inoremap \\return ⏎
 inoremap \\lqua ⌜
