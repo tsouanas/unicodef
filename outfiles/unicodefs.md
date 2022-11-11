@@ -502,7 +502,9 @@
 | `Sum` | ∑ |
 | `opcat` | ᵒᵖ |
 | `cons` | ∷ |
+| `concat` | ⧺ |
 | `::` | ∷ |
+| `inv` | ⁻¹ |
 | `lnot` | ¬ |
 | `lforall` | ∀ |
 | `lexists` | ∃ |

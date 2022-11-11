@@ -173,7 +173,9 @@ inoremap \\coprod ⨿
 inoremap \\Sum ∑
 inoremap \\opcat ᵒᵖ
 inoremap \\cons ∷
+inoremap \\concat ⧺
 inoremap \\:: ∷
+inoremap \\inv ⁻¹
 inoremap \\lnot ¬
 inoremap \\lforall ∀
 inoremap \\lexists ∃

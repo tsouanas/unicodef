@@ -178,14 +178,16 @@ ncong             ≢
 normal            ⊴
 pnormal           ⊲
 
-# cats/types
+# algebra/cats/types
 Prod              ∏
 Coprod            ∐
 coprod            ⨿
 Sum               ∑
 opcat             ᵒᵖ
 cons              ∷
+concat            ⧺
 ::                ∷
+inv               ⁻¹
 
 # logic
 lnot              ¬
