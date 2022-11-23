@@ -24,6 +24,10 @@
 | `leq` | ≤ |
 | `geq` | ≥ |
 | `neq` | ≠ |
+| `nlt` | ≮ |
+| `ngt` | ≯ |
+| `nleq` | ≰ |
+| `ngeq` | ≱ |
 | `div` | ∣ |
 | `ndiv` | ∤ |
 | `forall` | ∀ |

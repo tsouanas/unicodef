@@ -332,6 +332,10 @@ inoremap \\qed ∎
 inoremap \\leq ≤
 inoremap \\geq ≥
 inoremap \\neq ≠
+inoremap \\nlt ≮
+inoremap \\ngt ≯
+inoremap \\nleq ≰
+inoremap \\ngeq ≱
 inoremap \\div ∣
 inoremap \\ndiv ∤
 inoremap \\forall ∀
