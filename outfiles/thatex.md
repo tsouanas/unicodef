@@ -178,7 +178,7 @@
 | `Coprod` | ∐ |
 | `coprod` | ⨿ |
 | `Sum` | ∑ |
-| `opcat` | ᵒᵖ |
+| `op` | ᵒᵖ |
 | `cons` | ∷ |
 | `concat` | ⧺ |
 | `::` | ∷ |

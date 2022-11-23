@@ -174,7 +174,7 @@ inoremap \\Prod ∏
 inoremap \\Coprod ∐
 inoremap \\coprod ⨿
 inoremap \\Sum ∑
-inoremap \\opcat ᵒᵖ
+inoremap \\op ᵒᵖ
 inoremap \\cons ∷
 inoremap \\concat ⧺
 inoremap \\:: ∷
