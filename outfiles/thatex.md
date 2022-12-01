@@ -146,6 +146,8 @@
 | `comp` | ∘ |
 | `to` | → |
 | `from` | ← |
+| `nto` | ↛ |
+| `nfrom` | ↚ |
 | `parto` | ⇀ |
 | `mapsto` | ↦ |
 | `mapsfrom` | ↤ |

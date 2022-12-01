@@ -142,6 +142,8 @@ inoremap \\gimel ℷ
 inoremap \\comp ∘
 inoremap \\to →
 inoremap \\from ←
+inoremap \\nto ↛
+inoremap \\nfrom ↚
 inoremap \\parto ⇀
 inoremap \\mapsto ↦
 inoremap \\mapsfrom ↤
