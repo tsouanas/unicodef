@@ -368,6 +368,16 @@
 | `vimplies` | ⇓ |
 | `vimplied` | ⇑ |
 | `viff` | ⇕ |
+| `rlarr` | ⇄ |
+| `udarr` | ⇅ |
+| `lrarr` | ⇆ |
+| `llarr` | ⇇ |
+| `uuarr` | ⇈ |
+| `rrarr` | ⇉ |
+| `ddarr` | ⇊ |
+| `nimplied` | ⇍ |
+| `nimplies` | ⇏ |
+| `niff` | ⇎ |
 | `inteq` | ≡ |
 | `defeq` | ≝ |
 | `doteq` | ≐ |
@@ -479,6 +489,8 @@
 | `mapsfrom` | ↤ |
 | `tmapsto` | ⟼ |
 | `tmapsfrom` | ⟻ |
+| `mapsup` | ↥ |
+| `mapsdown` | ↧ |
 | `parfrom` | ↼ |
 | `rest` | ↾ |
 | `surto` | ↠ |

@@ -38,6 +38,16 @@ inoremap \\tiff ⟺
 inoremap \\vimplies ⇓
 inoremap \\vimplied ⇑
 inoremap \\viff ⇕
+inoremap \\rlarr ⇄
+inoremap \\udarr ⇅
+inoremap \\lrarr ⇆
+inoremap \\llarr ⇇
+inoremap \\uuarr ⇈
+inoremap \\rrarr ⇉
+inoremap \\ddarr ⇊
+inoremap \\nimplied ⇍
+inoremap \\nimplies ⇏
+inoremap \\niff ⇎
 inoremap \\inteq ≡
 inoremap \\defeq ≝
 inoremap \\doteq ≐
@@ -149,6 +159,8 @@ inoremap \\mapsto ↦
 inoremap \\mapsfrom ↤
 inoremap \\tmapsto ⟼
 inoremap \\tmapsfrom ⟻
+inoremap \\mapsup ↥
+inoremap \\mapsdown ↧
 inoremap \\parfrom ↼
 inoremap \\rest ↾
 inoremap \\surto ↠
