@@ -194,6 +194,10 @@ cong              ≡
 ncong             ≢
 normal            ⊴
 pnormal           ⊲
+sim               ~
+nsim              ≁
+approx            ≈
+napprox           ≉
 
 # algebra/cats/types
 Prod              ∏

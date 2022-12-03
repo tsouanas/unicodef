@@ -514,6 +514,10 @@
 | `ncong` | ≢ |
 | `normal` | ⊴ |
 | `pnormal` | ⊲ |
+| `sim` | ~ |
+| `nsim` | ≁ |
+| `approx` | ≈ |
+| `napprox` | ≉ |
 | `Prod` | ∏ |
 | `Coprod` | ∐ |
 | `coprod` | ⨿ |

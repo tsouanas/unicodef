@@ -496,6 +496,10 @@ inoremap \\cong ≡
 inoremap \\ncong ≢
 inoremap \\normal ⊴
 inoremap \\pnormal ⊲
+inoremap \\sim ~
+inoremap \\nsim ≁
+inoremap \\approx ≈
+inoremap \\napprox ≉
 inoremap \\Prod ∏
 inoremap \\Coprod ∐
 inoremap \\coprod ⨿
