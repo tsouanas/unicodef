@@ -289,8 +289,8 @@
 | `lunepsilon` | ϵ |
 | `zeta` | ζ |
 | `eta` | η |
-| `theta` | θ |
-| `curtheta` | ϑ |
+| `theta` | ϑ |
+| `vtheta` | θ |
 | `iota` | ι |
 | `kappa` | κ |
 | `curkappa` | ϰ |

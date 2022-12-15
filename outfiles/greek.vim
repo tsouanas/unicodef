@@ -31,8 +31,8 @@ inoremap \\epsilon ε
 inoremap \\lunepsilon ϵ
 inoremap \\zeta ζ
 inoremap \\eta η
-inoremap \\theta θ
-inoremap \\curtheta ϑ
+inoremap \\theta ϑ
+inoremap \\vtheta θ
 inoremap \\iota ι
 inoremap \\kappa κ
 inoremap \\curkappa ϰ
