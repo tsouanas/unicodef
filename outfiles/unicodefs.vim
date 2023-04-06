@@ -809,6 +809,10 @@ inoremap \\disjunion ⊎
 inoremap \\Disjunion ⨄
 inoremap \\dunion ⊎
 inoremap \\Dunion ⨄
+inoremap \\symdiff ∆
+inoremap \\sdiff ∆
+inoremap \\setminus ∖
+inoremap \\minus ∖
 inoremap \\subset ⊆
 inoremap \\supset ⊇
 inoremap \\psubset ⊊

@@ -827,6 +827,10 @@
 | `Disjunion` | ⨄ |
 | `dunion` | ⊎ |
 | `Dunion` | ⨄ |
+| `symdiff` | ∆ |
+| `sdiff` | ∆ |
+| `setminus` | ∖ |
+| `minus` | ∖ |
 | `subset` | ⊆ |
 | `supset` | ⊇ |
 | `psubset` | ⊊ |
