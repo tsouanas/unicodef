@@ -106,6 +106,8 @@ dotminus          ∸
 monus             ∸
 uplus             ⊎
 Uplus             ⨄
+dhole             –
+hole              _
 
 # sets
 emptyset          Ø

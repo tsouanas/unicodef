@@ -104,6 +104,8 @@
 | `monus` | ∸ |
 | `uplus` | ⊎ |
 | `Uplus` | ⨄ |
+| `dhole` | – |
+| `hole` | _ |
 | `emptyset` | Ø |
 | `bools` | 𝔹 |
 | `nats` | ℕ |

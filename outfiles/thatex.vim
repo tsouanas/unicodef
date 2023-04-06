@@ -100,6 +100,8 @@ inoremap \\dotminus ∸
 inoremap \\monus ∸
 inoremap \\uplus ⊎
 inoremap \\Uplus ⨄
+inoremap \\dhole –
+inoremap \\hole _
 inoremap \\emptyset Ø
 inoremap \\bools 𝔹
 inoremap \\nats ℕ
