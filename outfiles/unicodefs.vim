@@ -959,3 +959,20 @@ inoremap \\ibang ‽
 inoremap \\ignab ⸘
 inoremap \\abang ⁈
 inoremap \\bask ⁉
+inoremap \\CAT 𝐂𝐚𝐭
+inoremap \\SET 𝐒𝐞𝐭
+inoremap \\PSET 𝐏𝐒𝐞𝐭
+inoremap \\FINSET 𝐅𝐢𝐧𝐒𝐞𝐭
+inoremap \\FINORD 𝐅𝐢𝐧𝐎𝐫𝐝
+inoremap \\ORD 𝐎𝐫𝐝
+inoremap \\POSET 𝐏𝐨𝐬𝐞𝐭
+inoremap \\SGROUP 𝐒𝐞𝐦𝐢𝐠𝐫𝐨𝐮𝐩
+inoremap \\SGRP 𝐒𝐞𝐦𝐢𝐠𝐫𝐩
+inoremap \\MON 𝐌𝐨𝐧
+inoremap \\MONOID 𝐌𝐨𝐧𝐨𝐢𝐝
+inoremap \\GROUP 𝐆𝐫𝐨𝐮𝐩
+inoremap \\GRP 𝐆𝐫𝐩
+inoremap \\ABEL 𝐀𝐛𝐞𝐥
+inoremap \\RING 𝐑𝐢𝐧𝐠
+inoremap \\RNG 𝐑𝐧𝐠
+inoremap \\RIG 𝐑𝐢𝐠
