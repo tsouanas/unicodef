@@ -2,7 +2,7 @@
 
 This project consist of:
 
-* `unicodef.sh`: a script which, given appropriate input files, generates definitions of unicode sequences for use in X11 (via XCompose) and Vim;
+* `unicodef.sh`: a script which, given appropriate input files, generates definitions of unicode sequences for use in X11 (via XCompose), Windows (needs [WinCompose]) and Vim;
 * `defs/*`: my own (mostly [ThaTeX] influenced) input files for that script;
 * `outfiles/*`: the "compiled" outputs of my input files, ready to use.
 
@@ -29,6 +29,14 @@ export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
 ```
 
+### for Windows
+The instructions of [WinCompose] mention creating a `.XCompose` file, so the same instructions apply as above:
+Place `unicodefs.XCompose` somewhere (for example, in `%USERPROFILE%/unicodef/`) and have your `.XCompose` include it:
+```
+include "%USERPROFILE%/unicodef/unicodefs.XCompose"
+```
+If `include` does not work, do it manually: copy-paste the contents of `unicodefs.XCompose` in `.XCompose`.
+
 ### for Vim
 Place `unicodefs.vim` somewhere (for example, in `~/.unicodef/`) and have your `.vimrc` source it:
 ```
@@ -38,7 +46,7 @@ source ~/.unicodef/unicodefs.vim
 
 ## Usage
 
-### in X11
+### in X11 / Windows
 To use a sequence σ type <kbd>AltGr</kbd><kbd>AltGr</kbd>σ<kbd>space</kbd>.
 E.g.: Typing <kbd>AltGr</kbd><kbd>AltGr</kbd><kbd>n</kbd><kbd>a</kbd><kbd>t</kbd><kbd>s</kbd><kbd>space</kbd> simply writes `ℕ`.
 
@@ -76,4 +84,5 @@ Using make(1):
 [defs]:         src/defs
 [unicodefs.md]: outfiles/unicodefs.md
 [ThaTeX]:       https://github.com/tsouanas/thatex
+[WinCompose]:   https://github.com/samhocevar/wincompose
 
