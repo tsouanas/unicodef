@@ -30,12 +30,8 @@ export QT_IM_MODULE=xim
 ```
 
 ### for Windows
-The instructions of [WinCompose] mention creating a `.XCompose` file, so the same instructions apply as above:
-Place `unicodefs.XCompose` somewhere (for example, in `%USERPROFILE%/unicodef/`) and have your `.XCompose` include it:
-```
-include "%USERPROFILE%/unicodef/unicodefs.XCompose"
-```
-If `include` does not work, do it manually: copy-paste the contents of `unicodefs.XCompose` in `.XCompose`.
+First install [WinCompose].
+The `include` command works, so the same instructions apply as above, mutatis mutandis.
 
 ### for Vim
 Place `unicodefs.vim` somewhere (for example, in `~/.unicodef/`) and have your `.vimrc` source it:
