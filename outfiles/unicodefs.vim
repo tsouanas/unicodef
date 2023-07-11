@@ -914,8 +914,8 @@ inoremap \\linnot ⊥
 inoremap \\linto ⊸
 inoremap \\linwith &
 inoremap \\linpar ⅋
-inoremap \\horseimplies ⥰
-inoremap \\horseshoe ⥰
+inoremap \\himplies ⥰
+inoremap \\horse ⥰
 inoremap \\top ⊤
 inoremap \\bottom ⊥
 inoremap \\Meet ⋀
@@ -980,3 +980,10 @@ inoremap \\ABEL 𝐀𝐛𝐞𝐥
 inoremap \\RING 𝐑𝐢𝐧𝐠
 inoremap \\RNG 𝐑𝐧𝐠
 inoremap \\RIG 𝐑𝐢𝐠
+inoremap \\MOD 𝐌𝐨𝐝
+inoremap \\MAT 𝐌𝐚𝐭𝐫𝐢𝐱
+inoremap \\LAT 𝐋𝐚𝐭𝐭𝐢𝐜𝐞
+inoremap \\HALG 𝐇𝐞𝐲𝐭𝐢𝐧𝐠
+inoremap \\BALG 𝐁𝐨𝐨𝐥𝐞𝐚𝐧
+inoremap \\HA 𝐇𝐀
+inoremap \\BA 𝐁𝐀
