@@ -238,8 +238,8 @@ linnot            ⊥
 linto             ⊸
 linwith           &
 linpar            ⅋
-horseimplies      ⥰
-horseshoe         ⥰
+himplies          ⥰
+horse             ⥰
 
 # order
 top               ⊤
@@ -310,3 +310,10 @@ ABEL              𝐀𝐛𝐞𝐥
 RING              𝐑𝐢𝐧𝐠
 RNG               𝐑𝐧𝐠
 RIG               𝐑𝐢𝐠
+MOD               𝐌𝐨𝐝
+MAT               𝐌𝐚𝐭𝐫𝐢𝐱
+LAT               𝐋𝐚𝐭𝐭𝐢𝐜𝐞
+HALG              𝐇𝐞𝐲𝐭𝐢𝐧𝐠
+BALG              𝐁𝐨𝐨𝐥𝐞𝐚𝐧
+HA                𝐇𝐀
+BA                𝐁𝐀
