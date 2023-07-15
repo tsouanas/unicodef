@@ -16,13 +16,20 @@ lbag              ⟅
 rbag              ⟆
 lsem              ⟦
 rsem              ⟧
+lSet              ⦃
+rSet              ⦄
+lPar              ⦅
+rPar              ⦆
+lban              ⦇
+rban              ⦈
+lAngle            ⦉
+rAngle            ⦊
 lnorm             ‖
 rnorm             ‖
 
+# common math
 halmos            ∎
 qed               ∎
-
-# common math
 leq               ≤
 geq               ≥
 neq               ≠
@@ -65,6 +72,9 @@ vintimplies       ⤋
 intimplied        ⇚
 leadfrom          ↜
 leadsto           ↝
+eqto              ⥱
+isoto             ⥲
+Funto             ⥤
 therefore         ∴
 because           ∵
 vdots             ⋮

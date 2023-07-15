@@ -13,6 +13,14 @@ inoremap \\lbag ⟅
 inoremap \\rbag ⟆
 inoremap \\lsem ⟦
 inoremap \\rsem ⟧
+inoremap \\lSet ⦃
+inoremap \\rSet ⦄
+inoremap \\lPar ⦅
+inoremap \\rPar ⦆
+inoremap \\lban ⦇
+inoremap \\rban ⦈
+inoremap \\lAngle ⦉
+inoremap \\rAngle ⦊
 inoremap \\lnorm ‖
 inoremap \\rnorm ‖
 inoremap \\halmos ∎
@@ -59,6 +67,9 @@ inoremap \\vintimplies ⤋
 inoremap \\intimplied ⇚
 inoremap \\leadfrom ↜
 inoremap \\leadsto ↝
+inoremap \\eqto ⥱
+inoremap \\isoto ⥲
+inoremap \\Funto ⥤
 inoremap \\therefore ∴
 inoremap \\because ∵
 inoremap \\vdots ⋮

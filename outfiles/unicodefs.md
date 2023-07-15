@@ -721,6 +721,14 @@
 | `rbag` | ⟆ |
 | `lsem` | ⟦ |
 | `rsem` | ⟧ |
+| `lSet` | ⦃ |
+| `rSet` | ⦄ |
+| `lPar` | ⦅ |
+| `rPar` | ⦆ |
+| `lban` | ⦇ |
+| `rban` | ⦈ |
+| `lAngle` | ⦉ |
+| `rAngle` | ⦊ |
 | `lnorm` | ‖ |
 | `rnorm` | ‖ |
 | `halmos` | ∎ |
@@ -767,6 +775,9 @@
 | `intimplied` | ⇚ |
 | `leadfrom` | ↜ |
 | `leadsto` | ↝ |
+| `eqto` | ⥱ |
+| `isoto` | ⥲ |
+| `Funto` | ⥤ |
 | `therefore` | ∴ |
 | `because` | ∵ |
 | `vdots` | ⋮ |
