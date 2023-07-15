@@ -14,7 +14,7 @@ See [unicodefs.md] for a list of all sequences defined by the provided files in 
 
 ## Installation
 
-**tl;dr:** Just place `build/unicodefs.XCompose` and `build/unicodefs.vim` in the appropriate places and you're good to go.  No other file is needed.
+**tl;dr:** Just place `outfiles/unicodefs.XCompose` and `outfiles/unicodefs.vim` in the appropriate places and you're good to go.  No other file is needed.
 
 ### for X11
 Place `unicodefs.XCompose` somewhere (for example, in `~/.unicodef/`) and have your `.XCompose` include it:
