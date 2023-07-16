@@ -52,16 +52,19 @@ vimplies          ⇓
 vimplied          ⇑
 viff              ⇕
 rlarr             ⇄
-udarr             ⇅
 lrarr             ⇆
-llarr             ⇇
+tofrom            ⇄
+fromto            ⇆
+udarr             ⇅
 uuarr             ⇈
-rrarr             ⇉
 ddarr             ⇊
+llarr             ⇇
+rrarr             ⇉
 nimplied          ⇍
 nimplies          ⇏
 niff              ⇎
 inteq             ≡
+intneq            ≢
 defeq             ≝
 doteq             ≐
 askeq             ≟
@@ -70,8 +73,10 @@ intimplies        ⇛
 vintimplied       ⤊
 vintimplies       ⤋
 intimplied        ⇚
-leadfrom          ↜
+ledfrom           ↜
 leadsto           ↝
+lrlead            ↝
+rllead            ↜
 eqto              ⥱
 isoto             ⥲
 Funto             ⥤
@@ -121,6 +126,7 @@ hole              _
 
 # sets
 emptyset          Ø
+empty             Ø
 bools             𝔹
 nats              ℕ
 ints              ℤ
@@ -205,6 +211,8 @@ dfrom             ⇠
 dto               ⇢
 equiv             ≅
 nequiv            ≇
+iso               ≅
+niso              ≇
 rcomp             ⋄
 cong              ≡
 ncong             ≢
