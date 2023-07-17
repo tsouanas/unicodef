@@ -760,8 +760,8 @@ inoremap \\vintimplies ⤋
 inoremap \\intimplied ⇚
 inoremap \\ledfrom ↜
 inoremap \\leadsto ↝
-inoremap \\lrlead ↝
-inoremap \\rllead ↜
+inoremap \\rleads ↝
+inoremap \\lleads ↜
 inoremap \\eqto ⥱
 inoremap \\isoto ⥲
 inoremap \\Funto ⥤
@@ -1027,9 +1027,9 @@ inoremap \\vimps ⇓
 inoremap \\vimpd ⇑
 inoremap \\nimpd ⇍
 inoremap \\nimps ⇏
-inoremap \\lrmaps ↦
-inoremap \\rlmaps ↤
-inoremap \\LRmaps ⟼
-inoremap \\RLmaps ⟻
+inoremap \\rmaps ↦
+inoremap \\lmaps ↤
+inoremap \\Rmaps ⟼
+inoremap \\Lmaps ⟻
 inoremap \\there ∴
 inoremap \\cause ∵

@@ -778,8 +778,8 @@
 | `intimplied` | ⇚ |
 | `ledfrom` | ↜ |
 | `leadsto` | ↝ |
-| `lrlead` | ↝ |
-| `rllead` | ↜ |
+| `rleads` | ↝ |
+| `lleads` | ↜ |
 | `eqto` | ⥱ |
 | `isoto` | ⥲ |
 | `Funto` | ⥤ |
@@ -1045,9 +1045,9 @@
 | `vimpd` | ⇑ |
 | `nimpd` | ⇍ |
 | `nimps` | ⇏ |
-| `lrmaps` | ↦ |
-| `rlmaps` | ↤ |
-| `LRmaps` | ⟼ |
-| `RLmaps` | ⟻ |
+| `rmaps` | ↦ |
+| `lmaps` | ↤ |
+| `Rmaps` | ⟼ |
+| `Lmaps` | ⟻ |
 | `there` | ∴ |
 | `cause` | ∵ |
