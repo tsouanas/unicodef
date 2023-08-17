@@ -754,6 +754,7 @@ inoremap \\defeq ≝
 inoremap \\doteq ≐
 inoremap \\askeq ≟
 inoremap \\defiff ⇐≝⇒
+inoremap \\intiff ⇚⇛
 inoremap \\intimplies ⇛
 inoremap \\vintimplied ⤊
 inoremap \\vintimplies ⤋

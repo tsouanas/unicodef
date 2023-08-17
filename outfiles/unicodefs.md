@@ -772,6 +772,7 @@
 | `doteq` | ≐ |
 | `askeq` | ≟ |
 | `defiff` | ⇐≝⇒ |
+| `intiff` | ⇚⇛ |
 | `intimplies` | ⇛ |
 | `vintimplied` | ⤊ |
 | `vintimplies` | ⤋ |
