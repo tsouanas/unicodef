@@ -753,6 +753,8 @@ inoremap \\intneq ≢
 inoremap \\defeq ≝
 inoremap \\doteq ≐
 inoremap \\askeq ≟
+inoremap \\asteq ⩮
+inoremap \\stareq ≛
 inoremap \\defiff ⇐≝⇒
 inoremap \\intiff ⇚⇛
 inoremap \\intimplies ⇛

@@ -771,6 +771,8 @@
 | `defeq` | ≝ |
 | `doteq` | ≐ |
 | `askeq` | ≟ |
+| `asteq` | ⩮ |
+| `stareq` | ≛ |
 | `defiff` | ⇐≝⇒ |
 | `intiff` | ⇚⇛ |
 | `intimplies` | ⇛ |
