@@ -985,6 +985,8 @@ inoremap \\ibang ‽
 inoremap \\ignab ⸘
 inoremap \\abang ⁈
 inoremap \\bask ⁉
+inoremap \\frown ⌢
+inoremap \\smile ⌣
 inoremap \\CAT 𝐂𝐚𝐭
 inoremap \\SET 𝐒𝐞𝐭
 inoremap \\PSET 𝐏𝐒𝐞𝐭
