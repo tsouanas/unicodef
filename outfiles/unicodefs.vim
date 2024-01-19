@@ -690,6 +690,7 @@ inoremap \\psi ψ
 inoremap \\omega ω
 inoremap \\eur €
 inoremap \\gbp £
+inoremap \\usd $
 inoremap \\yen ¥
 inoremap \\brl R$
 inoremap \\spc ␣
