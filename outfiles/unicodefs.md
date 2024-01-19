@@ -1,6 +1,18 @@
 # List of defs 
 
 
+## emoji defs
+| Sequence | Expansion |
+| :------- | :-------: |
+| `bomb` | 💣 |
+| `boom` | 💥 |
+| `bulb` | 💡 |
+| `hrmf` | ⍨ |
+| `pirate` | ☠ |
+| `poo` | 💩 |
+| `smooch` | ⍣ |
+| `zzz` | 💤 |
+
 ## fonts defs
 | Sequence | Expansion |
 | :------- | :-------: |
@@ -694,14 +706,10 @@
 ## misc defs
 | Sequence | Expansion |
 | :------- | :-------: |
-| `bomb` | 💣 |
-| `boom` | 💥 |
-| `bulb` | 💡 |
-| `hrmf` | ⍨ |
-| `pirate` | ☠ |
-| `poo` | 💩 |
-| `smooch` | ⍣ |
-| `zzz` | 💤 |
+| `eur` | € |
+| `gbp` | £ |
+| `yen` | ¥ |
+| `brl` | R$ |
 
 ## thatex defs
 | Sequence | Expansion |

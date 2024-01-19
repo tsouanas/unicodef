@@ -2,11 +2,7 @@
 ## misc defs
 | Sequence | Expansion |
 | :------- | :-------: |
-| `bomb` | 💣 |
-| `boom` | 💥 |
-| `bulb` | 💡 |
-| `hrmf` | ⍨ |
-| `pirate` | ☠ |
-| `poo` | 💩 |
-| `smooch` | ⍣ |
-| `zzz` | 💤 |
+| `eur` | € |
+| `gbp` | £ |
+| `yen` | ¥ |
+| `brl` | R$ |

@@ -1,8 +1,4 @@
-inoremap \\bomb 💣
-inoremap \\boom 💥
-inoremap \\bulb 💡
-inoremap \\hrmf ⍨
-inoremap \\pirate ☠
-inoremap \\poo 💩
-inoremap \\smooch ⍣
-inoremap \\zzz 💤
+inoremap \\eur €
+inoremap \\gbp £
+inoremap \\yen ¥
+inoremap \\brl R$
