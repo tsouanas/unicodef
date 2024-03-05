@@ -131,6 +131,8 @@ inoremap \\reals ℝ
 inoremap \\complex ℂ
 inoremap \\notin ∉
 inoremap \\in ∈
+inoremap \\ni ∋
+inoremap \\nni ∌
 inoremap \\Inter ⋂
 inoremap \\Union ⋃
 inoremap \\inter ∩

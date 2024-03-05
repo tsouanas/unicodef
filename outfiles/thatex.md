@@ -135,6 +135,8 @@
 | `complex` | ℂ |
 | `notin` | ∉ |
 | `in` | ∈ |
+| `ni` | ∋ |
+| `nni` | ∌ |
 | `Inter` | ⋂ |
 | `Union` | ⋃ |
 | `inter` | ∩ |
