@@ -1000,6 +1000,7 @@ inoremap \\PSET 𝐏𝐒𝐞𝐭
 inoremap \\FINSET 𝐅𝐢𝐧𝐒𝐞𝐭
 inoremap \\FINORD 𝐅𝐢𝐧𝐎𝐫𝐝
 inoremap \\ORD 𝐎𝐫𝐝
+inoremap \\PROSET 𝐏𝐫𝐨𝐬𝐞𝐭
 inoremap \\POSET 𝐏𝐨𝐬𝐞𝐭
 inoremap \\SGROUP 𝐒𝐞𝐦𝐢𝐠𝐫𝐨𝐮𝐩
 inoremap \\SGRP 𝐒𝐞𝐦𝐢𝐠𝐫𝐩
