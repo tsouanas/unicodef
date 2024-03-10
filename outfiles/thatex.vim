@@ -129,9 +129,11 @@ inoremap \\ints ℤ
 inoremap \\rats ℚ
 inoremap \\reals ℝ
 inoremap \\complex ℂ
-inoremap \\notin ∉
 inoremap \\in ∈
+inoremap \\notin ∉
+inoremap \\nin ∉
 inoremap \\ni ∋
+inoremap \\notni ∌
 inoremap \\nni ∌
 inoremap \\Inter ⋂
 inoremap \\Union ⋃

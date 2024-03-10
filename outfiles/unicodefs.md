@@ -846,9 +846,11 @@
 | `rats` | ℚ |
 | `reals` | ℝ |
 | `complex` | ℂ |
-| `notin` | ∉ |
 | `in` | ∈ |
+| `notin` | ∉ |
+| `nin` | ∉ |
 | `ni` | ∋ |
+| `notni` | ∌ |
 | `nni` | ∌ |
 | `Inter` | ⋂ |
 | `Union` | ⋃ |
