@@ -1129,6 +1129,7 @@ inoremap \\smile ⌣
 inoremap \\CAT 𝐂𝐚𝐭
 inoremap \\SET 𝐒𝐞𝐭
 inoremap \\PSET 𝐏𝐒𝐞𝐭
+inoremap \\PTDSET 𝐏𝐭𝐝𝐒𝐞𝐭
 inoremap \\FINSET 𝐅𝐢𝐧𝐒𝐞𝐭
 inoremap \\FINORD 𝐅𝐢𝐧𝐎𝐫𝐝
 inoremap \\ORD 𝐎𝐫𝐝
@@ -1151,6 +1152,7 @@ inoremap \\HALG 𝐇𝐞𝐲𝐭𝐢𝐧𝐠
 inoremap \\BALG 𝐁𝐨𝐨𝐥𝐞𝐚𝐧
 inoremap \\HA 𝐇𝐀
 inoremap \\BA 𝐁𝐀
+inoremap \\MODEL 𝐌𝐨𝐝𝐞𝐥
 inoremap \\psubs ⊊
 inoremap \\psups ⊋
 inoremap \\hsubs ⊂
