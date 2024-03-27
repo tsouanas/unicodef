@@ -323,6 +323,7 @@ smile             ⌣
 CAT               𝐂𝐚𝐭
 SET               𝐒𝐞𝐭
 PSET              𝐏𝐒𝐞𝐭
+PTDSET            𝐏𝐭𝐝𝐒𝐞𝐭
 FINSET            𝐅𝐢𝐧𝐒𝐞𝐭
 FINORD            𝐅𝐢𝐧𝐎𝐫𝐝
 ORD               𝐎𝐫𝐝
@@ -345,6 +346,8 @@ HALG              𝐇𝐞𝐲𝐭𝐢𝐧𝐠
 BALG              𝐁𝐨𝐨𝐥𝐞𝐚𝐧
 HA                𝐇𝐀
 BA                𝐁𝐀
+MODEL             𝐌𝐨𝐝𝐞𝐥
+
 
 # XXX shortcuts for 6-char-limit
 psubs             ⊊
