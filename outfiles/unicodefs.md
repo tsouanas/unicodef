@@ -963,7 +963,9 @@
 | `odiv` | ⊘ |
 | `odot` | ⊙ |
 | `dotminus` | ∸ |
+| `dotplus` | ⨢ |
 | `monus` | ∸ |
+| `dottimes` | ⨰ |
 | `uplus` | ⊎ |
 | `Uplus` | ⨄ |
 | `dhole` | – |
@@ -1218,3 +1220,5 @@
 | `Lmaps` | ⟻ |
 | `there` | ∴ |
 | `cause` | ∵ |
+| `dplus` | ⨢ |
+| `dtimes` | ⨰ |
