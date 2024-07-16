@@ -12,6 +12,7 @@
 | `poo` | 💩 |
 | `smooch` | ⍣ |
 | `zzz` | 💤 |
+| `tada` | 🎉 |
 
 ## fonts defs
 | Sequence | Expansion |

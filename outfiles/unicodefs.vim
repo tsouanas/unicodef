@@ -6,6 +6,7 @@ inoremap \\pirate ☠
 inoremap \\poo 💩
 inoremap \\smooch ⍣
 inoremap \\zzz 💤
+inoremap \\tada 🎉
 inoremap \\scrA 𝒜
 inoremap \\scrB ℬ
 inoremap \\scrC 𝒞
