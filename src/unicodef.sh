@@ -49,6 +49,11 @@ for defs in "$@"; do
     sed 's/\(.*\)/"\1"/' raw.exp > tmp.exp
     paste -d ' ' tmp.seq tmp.exp          | tee -a "$BUILDDIR/unicodefs.XCompose" >  "$BUILDDIR/${defsname}.XCompose"
 
+    # YAML
+    sed -f Karabiner.sed  raw.seq > tmp.seq
+    sed 's/\(.*\)/"\1"/'  raw.exp > tmp.exp
+    paste -d ' ' tmp.seq tmp.exp          | tee -a "$BUILDDIR/unicodefs.yaml" >  "$BUILDDIR/${defsname}.yaml"
+
 done
 
 # clean up
