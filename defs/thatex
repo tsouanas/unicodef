@@ -121,7 +121,9 @@ ocross            ⊗
 odiv              ⊘
 odot              ⊙
 dotminus          ∸
+dotplus           ⨢
 monus             ∸
+dottimes          ⨰
 uplus             ⊎
 Uplus             ⨄
 dhole             –
@@ -394,4 +396,5 @@ Rmaps             ⟼
 Lmaps             ⟻
 there             ∴
 cause             ∵
-
+dplus             ⨢
+dtimes            ⨰

@@ -941,7 +941,9 @@ inoremap \\ocross ⊗
 inoremap \\odiv ⊘
 inoremap \\odot ⊙
 inoremap \\dotminus ∸
+inoremap \\dotplus ⨢
 inoremap \\monus ∸
+inoremap \\dottimes ⨰
 inoremap \\uplus ⊎
 inoremap \\Uplus ⨄
 inoremap \\dhole –
@@ -1196,3 +1198,5 @@ inoremap \\Rmaps ⟼
 inoremap \\Lmaps ⟻
 inoremap \\there ∴
 inoremap \\cause ∵
+inoremap \\dplus ⨢
+inoremap \\dtimes ⨰
