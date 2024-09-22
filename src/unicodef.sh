@@ -8,8 +8,9 @@ if [ "$#" -eq 0 ]; then
 fi
 
 mkdir -p $BUILDDIR
+rm -f $BUILDDIR/unicodefs.*
+
 print '# List of defs \n' > $BUILDDIR/unicodefs.md
-rm -f $BUILDDIR/unicodefs.vim $BUILDDIR/unicodefs.XCompose
 
 for defs in "$@"; do
 
