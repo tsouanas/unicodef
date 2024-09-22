@@ -5,7 +5,7 @@ default:
 
 macos: default
 	cd src \
-		&& python3 gencompose.py build/unicodefs.yaml > build/DefaultKeyBinding.dict \
+		&& cat build/unicodefs.yaml macOS.yaml | python3 gencompose.py - > build/DefaultKeyBinding.dict \
 		&& cp -p build/DefaultKeyBinding.dict ../outfiles/DefaultKeyBinding.dict
 
 install:
