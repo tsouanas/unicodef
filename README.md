@@ -76,17 +76,19 @@ to be used when separate inclusion is needed; as well as the overall
 * `unicodefs.XCompose`
 * `unicodefs.vim`
 * `unicodefs.yaml`
+* `DefaultKeyBindings.dict`
 
 files.  Usually you should just use these ones.
 Note that this means that you cannot call any defs file `unicodefs`.  Deal with it.
 
 Using make(1):
 
-* `make` runs `unicodef.sh` using all of `defs/*` as input files;
-* `make macos` makes then uses `gencompose.py` to create `DefaultKeyBinding.dict`;
+* `make` runs `unicodef.sh` using all of `defs/*` as input files to generate all files;
+* `make nomacos` is like `make` but skips the macOS part (does not generate `unicodefs.dict`);
 * `make install` copies the generated files to `~/.unicodef/`;
-* `make macosinstall` copies `DefaultKeyBinding.dict` to `~/Library/KeyBindings/`;
+* `make macosinstall` installs then symlinks `unicodefs.dict` to `~/Library/KeyBindings/DefaultKeyBinding.dict`;
 * `make uninstall` removes `~/.unicodef/`;
+* `make macosuninstall` uninstalls then removes the symlink mentioned above;
 * `make clean` removes the auxiliary generated files;
 * `make cleanall` removes *all* generated files.
 
