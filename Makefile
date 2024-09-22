@@ -1,7 +1,7 @@
 default:
 	cd src \
 		&& sh unicodef.sh ../defs/* \
-		&& cp -p build/*.md build/*.XCompose build/*.vim ../outfiles/
+		&& cp -p build/*.md build/*.XCompose build/*.vim build/*.yaml ../outfiles/
 
 install:
 	mkdir -p ~/.unicodef \
