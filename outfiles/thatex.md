@@ -59,6 +59,10 @@
 | `ddarr` | ⇊ |
 | `llarr` | ⇇ |
 | `rrarr` | ⇉ |
+| `uarr` | ↑ |
+| `darr` | ↓ |
+| `larr` | ← |
+| `rarr` | → |
 | `nimplied` | ⇍ |
 | `nimplies` | ⇏ |
 | `niff` | ⇎ |
@@ -296,6 +300,8 @@
 | `dleftarrow` | ⇠ |
 | `up` | ↑ |
 | `down` | ↓ |
+| `left` | ← |
+| `right` | → |
 | `Ell` | ℒ |
 | `ell` | ℓ |
 | `bang` | ! |

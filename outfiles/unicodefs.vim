@@ -881,6 +881,10 @@ inoremap \\uuarr ⇈
 inoremap \\ddarr ⇊
 inoremap \\llarr ⇇
 inoremap \\rrarr ⇉
+inoremap \\uarr ↑
+inoremap \\darr ↓
+inoremap \\larr ←
+inoremap \\rarr →
 inoremap \\nimplied ⇍
 inoremap \\nimplies ⇏
 inoremap \\niff ⇎
@@ -1118,6 +1122,8 @@ inoremap \\ddownarrow ⇣
 inoremap \\dleftarrow ⇠
 inoremap \\up ↑
 inoremap \\down ↓
+inoremap \\left ←
+inoremap \\right →
 inoremap \\Ell ℒ
 inoremap \\ell ℓ
 inoremap \\bang !
