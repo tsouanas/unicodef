@@ -3,6 +3,11 @@ default:
 		&& sh unicodef.sh ../defs/* \
 		&& cp -p build/*.md build/*.XCompose build/*.vim build/*.yaml ../outfiles/
 
+macos: default
+	cd src \
+		&& python3 gencompose.py build/unicodefs.yaml > build/DefaultKeyBinding.dict \
+		&& cp -p build/DefaultKeyBinding.dict ../outfiles/DefaultKeyBinding.dict
+
 install:
 	mkdir -p ~/.unicodef \
 		&& cp -p outfiles/* ~/.unicodef
