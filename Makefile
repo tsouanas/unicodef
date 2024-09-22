@@ -12,6 +12,10 @@ install:
 	mkdir -p ~/.unicodef \
 		&& cp -p outfiles/* ~/.unicodef
 
+macosinstall:
+	mkdir -p ~/Library/KeyBindings \
+		&& cp -p outfiles/DefaultKeyBinding.dict ~/Library/KeyBindings
+
 uninstall:
 	rm -rf ~/.unicodef
 
