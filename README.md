@@ -40,11 +40,8 @@ source ~/.unicodef/unicodefs.vim
 ```
 
 ### for macOS
-1. Install [Karabiner-Elements] and configure: Simple Modifications › For all devices › `right_command → non_us_backslash`.
-2. Place `DefaultKeyBinding.dict` under `~/Library/KeyBindings/` and restart the program you need to type in.
-
-If you keep a local copy of unicodef on your disk, just `git pull` and `make macosinstall` to update your bindings.
-
+1. Install [Karabiner-Elements] and configure: Simple Modifications › For all devices › `right_command → non_us_backslash`.  Note that your right command key will not function as a command key anymore.  (Feel free to choose some other key.)
+2. Run `git clone https://tsouanas.org/unicodef` to clone this repo, `cd` into it, and run `make macosinstall`.
 
 
 ## Usage
