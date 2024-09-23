@@ -40,9 +40,9 @@ source ~/.unicodef/unicodefs.vim
 ```
 
 ### for macOS
-1. Install [Karabiner-Elements] and configure:<br/>
-   Simple Modifications › For all devices › `right_command → non_us_backslash`.<br/>
-   (`right_command` is under «Modifier keys» and `non_us_backslash` is under «Controls and symbols»).<br/>
+1. Install [Karabiner-Elements] and configure:  
+   Simple Modifications › For all devices › `right_command → non_us_backslash`.  
+   (`right_command` is under «Modifier keys» and `non_us_backslash` is under «Controls and symbols»).  
    Note that your <kbd>RightCmd</kbd> key will not function as a command key anymore.  (Feel free to choose some other key.)
 2. Run `git clone https://tsouanas.org/unicodef` to clone this repo, `cd` into it, and run `make macosinstall`.
 
