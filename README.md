@@ -14,7 +14,7 @@ See [unicodefs.md] for a list of all sequences defined by the provided files in 
 
 ## Installation
 
-**tl;dr:** Just place `outfiles/unicodefs.XCompose` or `outfiles/unicodefs.vim` or `outfiles/DefaultKeyBinding.dict` in the appropriate places and you're good to go.  No other file is needed.
+**tl;dr:** Just place `outfiles/unicodefs.XCompose` or `outfiles/unicodefs.vim` or `outfiles/unicodefs.dict` in the appropriate places and you're good to go.  No other file is needed.
 
 ### for X11
 Place `unicodefs.XCompose` somewhere (for example, in `~/.unicodef/`) and have your `.XCompose` include it:
@@ -77,7 +77,7 @@ to be used when separate inclusion is needed; as well as the overall
 * `unicodefs.XCompose`
 * `unicodefs.vim`
 * `unicodefs.yaml`
-* `DefaultKeyBindings.dict`
+* `unicodefs.dict`
 
 files.  Usually you should just use these ones.
 Note that this means that you cannot call any defs file `unicodefs`.  Deal with it.
