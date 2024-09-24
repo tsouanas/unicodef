@@ -16,7 +16,7 @@ install:
 
 macosinstall: install
 	mkdir -p ~/Library/KeyBindings \
-		&& cp -i ~/.unicodef/unicodefs.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+		&& cp -f ~/.unicodef/unicodefs.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 uninstall:
 	rm -rf ~/.unicodef

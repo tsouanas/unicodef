@@ -87,12 +87,11 @@ Using make(1):
 * `make` runs `unicodef.sh` using all of `defs/*` as input files to generate all files;
 * `make nomacos` is like `make` but skips the macOS part (does not generate `unicodefs.dict`);
 * `make install` copies the generated files to `~/.unicodef/`;
-* `make macosinstall` installs then symlinks `unicodefs.dict` to `~/Library/KeyBindings/DefaultKeyBinding.dict`;
 * `make uninstall` removes `~/.unicodef/`;
-* `make macosuninstall` uninstalls then removes the symlink mentioned above;
+* `make macosinstall` installs then copies `unicodefs.dict` to `~/Library/KeyBindings/DefaultKeyBinding.dict`;
+* `make macosuninstall` uninstalls and also removes `~/Library/KeyBindings/DefaultKeyBinding.dict`;
 * `make clean` removes the auxiliary generated files;
 * `make cleanall` removes *all* generated files.
-
 
 [unicodefs.md]: outfiles/unicodefs.md
 [ThaTeX]:       https://github.com/tsouanas/thatex
