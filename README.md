@@ -45,7 +45,7 @@ source ~/.unicodef/unicodefs.vim
    (`right_command` is under «Modifier keys» and `non_us_backslash` is under «Controls and symbols».)  
    Note that your <kbd>RightCmd</kbd> key will not function as a command key anymore.
    Feel free to choose some other key if you prefer.
-2. Run `git clone https://tsouanas.org/unicodef` to clone this repo, `cd` into it, and run `make macosinstall`.
+2. Run `git clone https://github.com/tsouanas/unicodef` to clone this repo, `cd` into it, and run `make macosinstall`.
 
 
 ## Usage
