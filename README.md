@@ -93,6 +93,9 @@ Using make(1):
 * `make clean` removes the auxiliary generated files;
 * `make cleanall` removes *all* generated files.
 
+**Warning for macOS users.**
+If you are already using a `DefaultKeyBinding.dict`, then `make macosinstall` will overwrite the existing file, and `make macosuninstall` will delete it.
+
 [unicodefs.md]: outfiles/unicodefs.md
 [ThaTeX]:       https://github.com/tsouanas/thatex
 [WinCompose]:   https://github.com/samhocevar/wincompose
