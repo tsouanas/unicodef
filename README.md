@@ -104,7 +104,7 @@ Note that this means that you cannot call any input file `unicodefs`.
 Inside the `unicodef` directory you can run:
 
 * `make` runs `unicodef.py` on `defs/` generating files at `outfiles/`;
-* `make install` copies the generated files to `~/.unicodef/`;
+* `make install` copies all oufiles to `~/.unicodef/`;
 * `make uninstall` removes `~/.unicodef/`;
 * `make macosinstall` installs then copies `unicodefs.dict` to `~/Library/KeyBindings/DefaultKeyBinding.dict`;
 * `make macosuninstall` uninstalls and also removes `~/Library/KeyBindings/DefaultKeyBinding.dict`;
