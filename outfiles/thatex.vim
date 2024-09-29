@@ -141,6 +141,7 @@ inoremap \\nats ℕ
 inoremap \\ints ℤ
 inoremap \\rats ℚ
 inoremap \\reals ℝ
+inoremap \\comps ℂ
 inoremap \\complex ℂ
 inoremap \\in ∈
 inoremap \\notin ∉
@@ -399,7 +400,6 @@ inoremap \\there ∴
 inoremap \\cause ∵
 inoremap \\dplus ⨢
 inoremap \\dtimes ⨰
-inoremap \\comps ℂ
 inoremap \\rturns ⊢
 inoremap \\lturns ⊣
 inoremap \\provs ⊢

@@ -984,6 +984,7 @@
 | ``ints`` | ℤ |
 | ``rats`` | ℚ |
 | ``reals`` | ℝ |
+| ``comps`` | ℂ |
 | ``complex`` | ℂ |
 | ``in`` | ∈ |
 | ``notin`` | ∉ |
@@ -1242,7 +1243,6 @@
 | ``cause`` | ∵ |
 | ``dplus`` | ⨢ |
 | ``dtimes`` | ⨰ |
-| ``comps`` | ℂ |
 | ``rturns`` | ⊢ |
 | ``lturns`` | ⊣ |
 | ``provs`` | ⊢ |
