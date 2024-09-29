@@ -1,14 +1,5 @@
 default:
-	cd src \
-		&& sh unicodef.sh ../defs/* \
-		&& cp -p build/*.md build/*.XCompose build/*.vim build/*.yaml ../outfiles/ \
-		&& cat macOS.yaml build/unicodefs.yaml | /usr/bin/env python3 gencompose.py - | sed -f macOSescape.sed > build/unicodefs.dict \
-		&& cp -p build/unicodefs.dict ../outfiles/
-
-nomacos:
-	cd src \
-		&& sh unicodef.sh ../defs/* \
-		&& cp -p build/*.md build/*.XCompose build/*.vim build/*.yaml ../outfiles/
+	/usr/bin/env python src/unicodef.py defs outfiles
 
 install:
 	mkdir -p ~/.unicodef \
@@ -16,6 +7,7 @@ install:
 
 macosinstall: install
 	mkdir -p ~/Library/KeyBindings \
+		&& rm -f ~/Library/KeyBindings/DefaultKeyBinding.dict \
 		&& cp -f ~/.unicodef/unicodefs.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 uninstall:
@@ -25,7 +17,5 @@ macosuninstall: uninstall
 	rm -i ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 clean:
-	rm -rf src/build
-
-cleanall: clean
 	rm -f outfiles/*
+

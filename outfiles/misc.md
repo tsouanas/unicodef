@@ -1,9 +1,9 @@
-
-## misc defs
+## misc
 | Sequence | Expansion |
 | :------- | :-------: |
-| `eur` | € |
-| `gbp` | £ |
-| `usd` | $ |
-| `yen` | ¥ |
-| `brl` | R$ |
+| ``eur`` | € |
+| ``gbp`` | £ |
+| ``usd`` | $ |
+| ``yen`` | ¥ |
+| ``brl`` | R$ |
+| ``cent`` | ¢ |

@@ -138,6 +138,5 @@ def data_to_mac_dict(data):
     text = re.sub('": ', '" = ', text)
     return text
 
-
 if __name__ == '__main__':
     main()

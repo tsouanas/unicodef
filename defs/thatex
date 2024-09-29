@@ -1,6 +1,7 @@
 # typography
 spc               ␣
 nbsp               
+nnbsp              
 return            ⏎
 
 # quotes and brackets
@@ -74,6 +75,8 @@ doteq             ≐
 askeq             ≟
 asteq             ⩮
 stareq            ≛
+asseq             ≔
+eqass             ≕
 defiff            ⇐≝⇒
 intiff            ⇚⇛
 intimplies        ⇛
@@ -95,6 +98,10 @@ cdots             ⋯
 dotsb             ⋯
 ldots             …
 dotsc             …
+nedots            ⋰
+swdots            ⋰
+sedots            ⋱
+nwdots            ⋱
 pm                ±
 mp                ∓
 infty             ∞
@@ -244,7 +251,6 @@ Sum               ∑
 op                ᵒᵖ
 cons              ∷
 concat            ⧺
-::                ∷
 inv               ⁻¹
 
 # logic
@@ -261,6 +267,7 @@ Lor               ⋁
 sequent           ⊢
 proves            ⊢
 nproves           ⊬
+proved            ⊣
 models            ⊨
 nmodels           ⊭
 forces            ⊩
@@ -279,6 +286,10 @@ Meet              ⋀
 Join              ⋁
 meet              ∧
 join              ∨
+cmeet             ⋏
+cjoin             ⋎
+smeet             ⊓
+sjoin             ⊔
 incompar          ≸
 incompat          ‖
 wbelow            ≪
@@ -298,8 +309,14 @@ hearts            ♡
 diamonds          ♢
 clubs             ♣
 magic             ⛤
+bowtie            ⨝
+hrmf              ⍨
+smooch            ⍣
+lolli             ⊸
 rturnstile        ⊢
 lturnstile        ⊣
+Rturnstile        ⊨
+nRturnstile       ⊭
 sqleftarrow       ⇜
 sqrightarrow      ⇝
 sqbotharrow       ↭
@@ -343,7 +360,6 @@ dbtris            ▾
 lbtris            ◂
 rbtris            ▸
 
-
 # cats
 CAT               𝐂𝐚𝐭
 SET               𝐒𝐞𝐭
@@ -373,7 +389,6 @@ HA                𝐇𝐀
 BA                𝐁𝐀
 MODEL             𝐌𝐨𝐝𝐞𝐥
 
-
 # XXX shortcuts for 6-char-limit
 psubs             ⊊
 psups             ⊋
@@ -388,6 +403,7 @@ ex                ∃
 nex               ∄
 imps              ⇒
 impd              ⇐
+himps             ⥰
 iff               ⇔
 timps             ⟹
 timpd             ⟸
@@ -404,3 +420,11 @@ there             ∴
 cause             ∵
 dplus             ⨢
 dtimes            ⨰
+comps             ℂ
+rturns            ⊢
+lturns            ⊣
+provs             ⊢
+provd             ⊣
+nprovs            ⊬
+mods              ⊨
+nmods             ⊭

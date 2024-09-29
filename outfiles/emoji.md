@@ -1,13 +1,11 @@
-
-## emoji defs
+## emoji
 | Sequence | Expansion |
 | :------- | :-------: |
-| `bomb` | 💣 |
-| `boom` | 💥 |
-| `bulb` | 💡 |
-| `hrmf` | ⍨ |
-| `pirate` | ☠ |
-| `poo` | 💩 |
-| `smooch` | ⍣ |
-| `zzz` | 💤 |
-| `tada` | 🎉 |
+| ``bomb`` | 💣 |
+| ``boom`` | 💥 |
+| ``bulb`` | 💡 |
+| ``pirate`` | ☠ |
+| ``poo`` | 💩 |
+| ``puffy`` | 🐡 |
+| ``tada`` | 🎉 |
+| ``zzz`` | 💤 |

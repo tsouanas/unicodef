@@ -1,5 +1,6 @@
 inoremap \\spc ␣
 inoremap \\nbsp  
+inoremap \\nnbsp  
 inoremap \\return ⏎
 inoremap \\lqua ⌜
 inoremap \\rqua ⌝
@@ -69,6 +70,8 @@ inoremap \\doteq ≐
 inoremap \\askeq ≟
 inoremap \\asteq ⩮
 inoremap \\stareq ≛
+inoremap \\asseq ≔
+inoremap \\eqass ≕
 inoremap \\defiff ⇐≝⇒
 inoremap \\intiff ⇚⇛
 inoremap \\intimplies ⇛
@@ -90,6 +93,10 @@ inoremap \\cdots ⋯
 inoremap \\dotsb ⋯
 inoremap \\ldots …
 inoremap \\dotsc …
+inoremap \\nedots ⋰
+inoremap \\swdots ⋰
+inoremap \\sedots ⋱
+inoremap \\nwdots ⋱
 inoremap \\pm ±
 inoremap \\mp ∓
 inoremap \\infty ∞
@@ -233,7 +240,6 @@ inoremap \\Sum ∑
 inoremap \\op ᵒᵖ
 inoremap \\cons ∷
 inoremap \\concat ⧺
-inoremap \\:: ∷
 inoremap \\inv ⁻¹
 inoremap \\lnot ¬
 inoremap \\lforall ∀
@@ -248,6 +254,7 @@ inoremap \\Lor ⋁
 inoremap \\sequent ⊢
 inoremap \\proves ⊢
 inoremap \\nproves ⊬
+inoremap \\proved ⊣
 inoremap \\models ⊨
 inoremap \\nmodels ⊭
 inoremap \\forces ⊩
@@ -264,6 +271,10 @@ inoremap \\Meet ⋀
 inoremap \\Join ⋁
 inoremap \\meet ∧
 inoremap \\join ∨
+inoremap \\cmeet ⋏
+inoremap \\cjoin ⋎
+inoremap \\smeet ⊓
+inoremap \\sjoin ⊔
 inoremap \\incompar ≸
 inoremap \\incompat ‖
 inoremap \\wbelow ≪
@@ -281,8 +292,14 @@ inoremap \\hearts ♡
 inoremap \\diamonds ♢
 inoremap \\clubs ♣
 inoremap \\magic ⛤
+inoremap \\bowtie ⨝
+inoremap \\hrmf ⍨
+inoremap \\smooch ⍣
+inoremap \\lolli ⊸
 inoremap \\rturnstile ⊢
 inoremap \\lturnstile ⊣
+inoremap \\Rturnstile ⊨
+inoremap \\nRturnstile ⊭
 inoremap \\sqleftarrow ⇜
 inoremap \\sqrightarrow ⇝
 inoremap \\sqbotharrow ↭
@@ -365,6 +382,7 @@ inoremap \\ex ∃
 inoremap \\nex ∄
 inoremap \\imps ⇒
 inoremap \\impd ⇐
+inoremap \\himps ⥰
 inoremap \\iff ⇔
 inoremap \\timps ⟹
 inoremap \\timpd ⟸
@@ -381,3 +399,11 @@ inoremap \\there ∴
 inoremap \\cause ∵
 inoremap \\dplus ⨢
 inoremap \\dtimes ⨰
+inoremap \\comps ℂ
+inoremap \\rturns ⊢
+inoremap \\lturns ⊣
+inoremap \\provs ⊢
+inoremap \\provd ⊣
+inoremap \\nprovs ⊬
+inoremap \\mods ⊨
+inoremap \\nmods ⊭

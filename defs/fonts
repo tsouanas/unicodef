@@ -1,5 +1,4 @@
 # script
-
 scrA              𝒜
 scrB              ℬ
 scrC              𝒞
@@ -54,7 +53,6 @@ scry              𝓎
 scrz              𝓏
 
 # caligraphic
-
 calA              𝓐
 calB              𝓑
 calC              𝓒
@@ -109,7 +107,6 @@ caly              𝔂
 calz              𝔃
 
 # monospace
-
 ttA               𝙰
 ttB               𝙱
 ttC               𝙲
@@ -164,7 +161,6 @@ tty               𝚢
 ttz               𝚣
 
 # italic serif (it)
-
 itA               𝐴
 itB               𝐵
 itC               𝐶
@@ -218,9 +214,7 @@ itx               𝑥
 ity               𝑦
 itz               𝑧
 
-
 # italic sans-serif (is)
-
 isA               𝘈
 isB               𝘉
 isC               𝘊
@@ -273,7 +267,6 @@ isw               𝘸
 isx               𝘹
 isy               𝘺
 isz               𝘻
-
 
 # bold serif (bf)
 bfA               𝐀
