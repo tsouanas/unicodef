@@ -50,7 +50,7 @@ xcompose_reps = {
     '=': '<equal>',
     '+': '<plus>',
     '"': '<quotedbl>',
-    "'": '<acute>',
+    "'": '<apostrophe>',
     '/': '<slash>',
     '\\': '<backslash>',
     '|': '<bar>',
