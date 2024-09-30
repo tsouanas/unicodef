@@ -1,3 +1,4 @@
+
 # emoji (macro)
 | Sequence | Expansion |
 | :------- | :-------: |

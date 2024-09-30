@@ -1,3 +1,4 @@
+
 # misc (macro)
 | Sequence | Expansion |
 | :------- | :-------: |

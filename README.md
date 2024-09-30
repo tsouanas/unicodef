@@ -84,9 +84,9 @@ Sequences are defined by files under `defs/`; the file format is very simple:
 each line is a sequence, followed by one or more spaces, followed by its expansion.
 You may have blank lines and a `#` at the beginning of a line indicates a comment.
 
-See `defs/_simple` or `defs/thatex` for examples.
+See `defs/simple_` or `defs/thatex` for examples.
 
-Definitions in files whose names begin with an underscore (`_`) are considered **micro**;
+Definitions in files whose names end with an underscore (`_`) are considered **micro**;
 otherwise they are **macro**.  (See above.)
 
 ### Compiling defs

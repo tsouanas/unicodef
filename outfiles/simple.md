@@ -1,3 +1,4 @@
+
 # simple (micro)
 | Sequence | Expansion |
 | :------- | :-------: |
