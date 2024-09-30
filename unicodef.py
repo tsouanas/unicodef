@@ -162,7 +162,6 @@ xcompose_v_reps = {
     '\\': '\\\\',
     }
 
-
 def xcompose_trans_k(c):
     if c in xcompose_k_reps:
         return xcompose_k_reps[c]
@@ -206,6 +205,12 @@ def vim_head(h):
 
 # Markdown
 
+md_reps = {
+    '`': '\\`',
+    '|': '\\|'
+    }
+md_trans = simple_trans(md_reps)
+
 def md_caption(title, level=1):
     return f'''{"#" * level} {title}
 | Sequence | Expansion |
@@ -213,7 +218,9 @@ def md_caption(title, level=1):
 '''
 
 def md_line(k, v):
-    return f'| ``{k}`` | {v} |\n'
+    k = translate(md_trans, k)
+    v = translate(md_trans, v)
+    return f'| `{k}` | {v} |\n'
 
 
 # macOS dict
