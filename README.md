@@ -72,10 +72,9 @@ To use a *macro* sequence σ, *double-hit* the <kbd>Compose</kbd> key, type the 
 
 E.g.: Typing <kbd>Compose</kbd><kbd>Compose</kbd><kbd>n</kbd><kbd>a</kbd><kbd>t</kbd><kbd>s</kbd><kbd>space</kbd> simply writes `ℕ`.
 
-**In Xorg / Windows** use <kbd>AltGr</kbd> for <kbd>Compose</kbd>.  
-**In macOS** use <kbd>RightCmd</kbd>.  
-**In Vim** (in INSERT MODE) use <kbd> \ </kbd>.
-E.g.: Typing `f : \\nats \\to \\nats` you get `f : ℕ → ℕ`.
+* **In Xorg / Windows** use <kbd>AltGr</kbd> for <kbd>Compose</kbd>.
+* **In macOS** use <kbd>RightCmd</kbd>.
+* **In Vim** (in INSERT MODE) use <kbd> \ </kbd>: e.g., typing `f : \\nats \\to \\nats` you get `f : ℕ → ℕ`.
 
 
 ## Editing or creating your own defs
