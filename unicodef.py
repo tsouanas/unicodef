@@ -207,8 +207,7 @@ def vim_head(h):
 # Markdown
 
 def md_caption(title, level=1):
-    return f'''
-{"#" * level} {title}
+    return f'''{"#" * level} {title}
 | Sequence | Expansion |
 | :------- | :-------: |
 '''
@@ -244,8 +243,11 @@ langs = dict(
     vim      = dict(liner=vim_line,      header=vim_head,      ext='.vim'),
     )
 
+def infile_name(infile):
+    return infile.split('/')[-1].rstrip('_')
+
 def cf_name(cf):
-    return cf.name.split('/')[-1].rstrip('_')
+    return infile_name(cf.name)
 
 def cf_mode(cf):
     return 'micro' if cf.name.split('/')[-1].endswith('_') else 'macro'
@@ -316,12 +318,13 @@ def main():
         if not os.path.exists(infile):
             error(f'{infile} does not exist.')
 
-    if not os.path.exists(outdir):
-        os.mkdir(outdir)
-
-    # initialize unicodefs.markdown
+    # initialize all markdowns
     with open(f'{outdir}/unicodefs.md', 'w') as book_md:
         book_md.write('# unicodefs\n\n')
+    for infile in args.infiles:
+        chap_md_name = f'{outdir}/{infile_name(infile)}.md'
+        if os.path.exists(chap_md_name):
+            os.remove(chap_md_name)
 
     # assertion
     if ('unicodefs' in infiles) or ('_unicodefs' in infiles):
