@@ -245,7 +245,9 @@
     "<" = ("insertText:", "←");
     ">" = ("insertText:", "→");
     "-" = {
+      "m" = ("insertText:", "–");
       "-" = ("insertText:", "—");
+      "n" = ("insertText:", "–");
       "." = ("insertText:", "–");
     };
   };

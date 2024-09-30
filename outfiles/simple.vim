@@ -30,11 +30,12 @@ inoremap \:- ⋯
 inoremap \3: ⋮
 inoremap \2. ‥
 inoremap \3. …
-inoremap \3: ⋮
 inoremap \.. …
 inoremap \:: ∷
 inoremap \--. –
+inoremap \--n –
 inoremap \--- —
+inoremap \--m –
 inoremap \~~ ≈
 inoremap \.- ·
 inoremap \^. ·
@@ -140,7 +141,6 @@ inoremap \b! ḅ
 inoremap \c' ć
 inoremap \cv č
 inoremap \c^ ĉ
-inoremap \c. ċ
 inoremap \c. ċ
 inoremap \c, ç
 inoremap \dv ď
@@ -276,7 +276,6 @@ inoremap \B! Ḅ
 inoremap \C' Ć
 inoremap \Cv Č
 inoremap \C^ Ĉ
-inoremap \C. Ċ
 inoremap \C. Ċ
 inoremap \C, Ç
 inoremap \Dv Ď
@@ -505,7 +504,6 @@ inoremap \-y ȳ
 inoremap \.A Ȧ
 inoremap \.B Ḃ
 inoremap \.C Ċ
-inoremap \.C Ċ
 inoremap \.D Ḋ
 inoremap \.E Ė
 inoremap \.F Ḟ
@@ -526,7 +524,6 @@ inoremap \.Y Ẏ
 inoremap \.Z Ż
 inoremap \.a ȧ
 inoremap \.b ḃ
-inoremap \.c ċ
 inoremap \.c ċ
 inoremap \.d ḋ
 inoremap \.e ė

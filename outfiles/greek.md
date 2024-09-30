@@ -1,4 +1,4 @@
-## greek
+# greek (macro)
 | Sequence | Expansion |
 | :------- | :-------: |
 | ``Alpha`` | Α |

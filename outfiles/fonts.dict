@@ -174,164 +174,194 @@
           };
           " " = ("insertText:", "𝐫");
         };
-        "i" = {
+        "s" = {
+          "9" = {
+            " " = ("insertText:", "𝟵");
+          };
+          "8" = {
+            " " = ("insertText:", "𝟴");
+          };
+          "7" = {
+            " " = ("insertText:", "𝟳");
+          };
+          "6" = {
+            " " = ("insertText:", "𝟲");
+          };
+          "5" = {
+            " " = ("insertText:", "𝟱");
+          };
+          "4" = {
+            " " = ("insertText:", "𝟰");
+          };
+          "3" = {
+            " " = ("insertText:", "𝟯");
+          };
+          "2" = {
+            " " = ("insertText:", "𝟮");
+          };
+          "1" = {
+            " " = ("insertText:", "𝟭");
+          };
+          "0" = {
+            " " = ("insertText:", "𝟬");
+          };
           "z" = {
-            " " = ("insertText:", "𝒛");
+            " " = ("insertText:", "𝘇");
           };
           "y" = {
-            " " = ("insertText:", "𝒚");
+            " " = ("insertText:", "𝘆");
           };
           "x" = {
-            " " = ("insertText:", "𝒙");
+            " " = ("insertText:", "𝘅");
           };
           "w" = {
-            " " = ("insertText:", "𝒘");
+            " " = ("insertText:", "𝘄");
           };
           "v" = {
-            " " = ("insertText:", "𝒗");
+            " " = ("insertText:", "𝘃");
           };
           "u" = {
-            " " = ("insertText:", "𝒖");
+            " " = ("insertText:", "𝘂");
           };
           "t" = {
-            " " = ("insertText:", "𝒕");
+            " " = ("insertText:", "𝘁");
           };
           "s" = {
-            " " = ("insertText:", "𝒔");
+            " " = ("insertText:", "𝘀");
           };
           "r" = {
-            " " = ("insertText:", "𝒓");
+            " " = ("insertText:", "𝗿");
           };
           "q" = {
-            " " = ("insertText:", "𝒒");
+            " " = ("insertText:", "𝗾");
           };
           "p" = {
-            " " = ("insertText:", "𝒑");
+            " " = ("insertText:", "𝗽");
           };
           "o" = {
-            " " = ("insertText:", "𝒐");
+            " " = ("insertText:", "𝗼");
           };
           "n" = {
-            " " = ("insertText:", "𝒏");
+            " " = ("insertText:", "𝗻");
           };
           "m" = {
-            " " = ("insertText:", "𝒎");
+            " " = ("insertText:", "𝗺");
           };
           "l" = {
-            " " = ("insertText:", "𝒍");
+            " " = ("insertText:", "𝗹");
           };
           "k" = {
-            " " = ("insertText:", "𝒌");
+            " " = ("insertText:", "𝗸");
           };
           "j" = {
-            " " = ("insertText:", "𝒋");
+            " " = ("insertText:", "𝗷");
           };
           "i" = {
-            " " = ("insertText:", "𝒊");
+            " " = ("insertText:", "𝗶");
           };
           "h" = {
-            " " = ("insertText:", "𝒉");
+            " " = ("insertText:", "𝗵");
           };
           "g" = {
-            " " = ("insertText:", "𝒈");
+            " " = ("insertText:", "𝗴");
           };
           "f" = {
-            " " = ("insertText:", "𝒇");
+            " " = ("insertText:", "𝗳");
           };
           "e" = {
-            " " = ("insertText:", "𝒆");
+            " " = ("insertText:", "𝗲");
           };
           "d" = {
-            " " = ("insertText:", "𝒅");
+            " " = ("insertText:", "𝗱");
           };
           "c" = {
-            " " = ("insertText:", "𝒄");
+            " " = ("insertText:", "𝗰");
           };
           "b" = {
-            " " = ("insertText:", "𝒃");
+            " " = ("insertText:", "𝗯");
           };
           "a" = {
-            " " = ("insertText:", "𝒂");
+            " " = ("insertText:", "𝗮");
           };
           "Z" = {
-            " " = ("insertText:", "𝒁");
+            " " = ("insertText:", "𝗭");
           };
           "Y" = {
-            " " = ("insertText:", "𝒀");
+            " " = ("insertText:", "𝗬");
           };
           "X" = {
-            " " = ("insertText:", "𝑿");
+            " " = ("insertText:", "𝗫");
           };
           "W" = {
-            " " = ("insertText:", "𝑾");
+            " " = ("insertText:", "𝗪");
           };
           "V" = {
-            " " = ("insertText:", "𝑽");
+            " " = ("insertText:", "𝗩");
           };
           "U" = {
-            " " = ("insertText:", "𝑼");
+            " " = ("insertText:", "𝗨");
           };
           "T" = {
-            " " = ("insertText:", "𝑻");
+            " " = ("insertText:", "𝗧");
           };
           "S" = {
-            " " = ("insertText:", "𝑺");
+            " " = ("insertText:", "𝗦");
           };
           "R" = {
-            " " = ("insertText:", "𝑹");
+            " " = ("insertText:", "𝗥");
           };
           "Q" = {
-            " " = ("insertText:", "𝑸");
+            " " = ("insertText:", "𝗤");
           };
           "P" = {
-            " " = ("insertText:", "𝑷");
+            " " = ("insertText:", "𝗣");
           };
           "O" = {
-            " " = ("insertText:", "𝑶");
+            " " = ("insertText:", "𝗢");
           };
           "N" = {
-            " " = ("insertText:", "𝑵");
+            " " = ("insertText:", "𝗡");
           };
           "M" = {
-            " " = ("insertText:", "𝑴");
+            " " = ("insertText:", "𝗠");
           };
           "L" = {
-            " " = ("insertText:", "𝑳");
+            " " = ("insertText:", "𝗟");
           };
           "K" = {
-            " " = ("insertText:", "𝑲");
+            " " = ("insertText:", "𝗞");
           };
           "J" = {
-            " " = ("insertText:", "𝑱");
+            " " = ("insertText:", "𝗝");
           };
           "I" = {
-            " " = ("insertText:", "𝑰");
+            " " = ("insertText:", "𝗜");
           };
           "H" = {
-            " " = ("insertText:", "𝑯");
+            " " = ("insertText:", "𝗛");
           };
           "G" = {
-            " " = ("insertText:", "𝑮");
+            " " = ("insertText:", "𝗚");
           };
           "F" = {
-            " " = ("insertText:", "𝑭");
+            " " = ("insertText:", "𝗙");
           };
           "E" = {
-            " " = ("insertText:", "𝑬");
+            " " = ("insertText:", "𝗘");
           };
           "D" = {
-            " " = ("insertText:", "𝑫");
+            " " = ("insertText:", "𝗗");
           };
           "C" = {
-            " " = ("insertText:", "𝑪");
+            " " = ("insertText:", "𝗖");
           };
           "B" = {
-            " " = ("insertText:", "𝑩");
+            " " = ("insertText:", "𝗕");
           };
           "A" = {
-            " " = ("insertText:", "𝑨");
+            " " = ("insertText:", "𝗔");
           };
-          " " = ("insertText:", "𝐢");
+          " " = ("insertText:", "𝐬");
         };
         "9" = {
           " " = ("insertText:", "𝟗");
@@ -384,9 +414,6 @@
         "t" = {
           " " = ("insertText:", "𝐭");
         };
-        "s" = {
-          " " = ("insertText:", "𝐬");
-        };
         "q" = {
           " " = ("insertText:", "𝐪");
         };
@@ -410,6 +437,9 @@
         };
         "j" = {
           " " = ("insertText:", "𝐣");
+        };
+        "i" = {
+          " " = ("insertText:", "𝐢");
         };
         "h" = {
           " " = ("insertText:", "𝐡");
@@ -738,8 +768,8 @@
           " " = ("insertText:", "𝔸");
         };
       };
-      "s" = {
-        "i" = {
+      "i" = {
+        "s" = {
           "z" = {
             " " = ("insertText:", "𝙯");
           };
@@ -896,190 +926,160 @@
           "A" = {
             " " = ("insertText:", "𝘼");
           };
-          " " = ("insertText:", "𝗶");
-        };
-        "9" = {
-          " " = ("insertText:", "𝟵");
-        };
-        "8" = {
-          " " = ("insertText:", "𝟴");
-        };
-        "7" = {
-          " " = ("insertText:", "𝟳");
-        };
-        "6" = {
-          " " = ("insertText:", "𝟲");
-        };
-        "5" = {
-          " " = ("insertText:", "𝟱");
-        };
-        "4" = {
-          " " = ("insertText:", "𝟰");
-        };
-        "3" = {
-          " " = ("insertText:", "𝟯");
-        };
-        "2" = {
-          " " = ("insertText:", "𝟮");
-        };
-        "1" = {
-          " " = ("insertText:", "𝟭");
-        };
-        "0" = {
-          " " = ("insertText:", "𝟬");
+          " " = ("insertText:", "𝒔");
         };
         "z" = {
-          " " = ("insertText:", "𝘇");
+          " " = ("insertText:", "𝒛");
         };
         "y" = {
-          " " = ("insertText:", "𝘆");
+          " " = ("insertText:", "𝒚");
         };
         "x" = {
-          " " = ("insertText:", "𝘅");
+          " " = ("insertText:", "𝒙");
         };
         "w" = {
-          " " = ("insertText:", "𝘄");
+          " " = ("insertText:", "𝒘");
         };
         "v" = {
-          " " = ("insertText:", "𝘃");
+          " " = ("insertText:", "𝒗");
         };
         "u" = {
-          " " = ("insertText:", "𝘂");
+          " " = ("insertText:", "𝒖");
         };
         "t" = {
-          " " = ("insertText:", "𝘁");
-        };
-        "s" = {
-          " " = ("insertText:", "𝘀");
+          " " = ("insertText:", "𝒕");
         };
         "r" = {
-          " " = ("insertText:", "𝗿");
+          " " = ("insertText:", "𝒓");
         };
         "q" = {
-          " " = ("insertText:", "𝗾");
+          " " = ("insertText:", "𝒒");
         };
         "p" = {
-          " " = ("insertText:", "𝗽");
+          " " = ("insertText:", "𝒑");
         };
         "o" = {
-          " " = ("insertText:", "𝗼");
+          " " = ("insertText:", "𝒐");
         };
         "n" = {
-          " " = ("insertText:", "𝗻");
+          " " = ("insertText:", "𝒏");
         };
         "m" = {
-          " " = ("insertText:", "𝗺");
+          " " = ("insertText:", "𝒎");
         };
         "l" = {
-          " " = ("insertText:", "𝗹");
+          " " = ("insertText:", "𝒍");
         };
         "k" = {
-          " " = ("insertText:", "𝗸");
+          " " = ("insertText:", "𝒌");
         };
         "j" = {
-          " " = ("insertText:", "𝗷");
+          " " = ("insertText:", "𝒋");
+        };
+        "i" = {
+          " " = ("insertText:", "𝒊");
         };
         "h" = {
-          " " = ("insertText:", "𝗵");
+          " " = ("insertText:", "𝒉");
         };
         "g" = {
-          " " = ("insertText:", "𝗴");
+          " " = ("insertText:", "𝒈");
         };
         "f" = {
-          " " = ("insertText:", "𝗳");
+          " " = ("insertText:", "𝒇");
         };
         "e" = {
-          " " = ("insertText:", "𝗲");
+          " " = ("insertText:", "𝒆");
         };
         "d" = {
-          " " = ("insertText:", "𝗱");
+          " " = ("insertText:", "𝒅");
         };
         "c" = {
-          " " = ("insertText:", "𝗰");
+          " " = ("insertText:", "𝒄");
         };
         "b" = {
-          " " = ("insertText:", "𝗯");
+          " " = ("insertText:", "𝒃");
         };
         "a" = {
-          " " = ("insertText:", "𝗮");
+          " " = ("insertText:", "𝒂");
         };
         "Z" = {
-          " " = ("insertText:", "𝗭");
+          " " = ("insertText:", "𝒁");
         };
         "Y" = {
-          " " = ("insertText:", "𝗬");
+          " " = ("insertText:", "𝒀");
         };
         "X" = {
-          " " = ("insertText:", "𝗫");
+          " " = ("insertText:", "𝑿");
         };
         "W" = {
-          " " = ("insertText:", "𝗪");
+          " " = ("insertText:", "𝑾");
         };
         "V" = {
-          " " = ("insertText:", "𝗩");
+          " " = ("insertText:", "𝑽");
         };
         "U" = {
-          " " = ("insertText:", "𝗨");
+          " " = ("insertText:", "𝑼");
         };
         "T" = {
-          " " = ("insertText:", "𝗧");
+          " " = ("insertText:", "𝑻");
         };
         "S" = {
-          " " = ("insertText:", "𝗦");
+          " " = ("insertText:", "𝑺");
         };
         "R" = {
-          " " = ("insertText:", "𝗥");
+          " " = ("insertText:", "𝑹");
         };
         "Q" = {
-          " " = ("insertText:", "𝗤");
+          " " = ("insertText:", "𝑸");
         };
         "P" = {
-          " " = ("insertText:", "𝗣");
+          " " = ("insertText:", "𝑷");
         };
         "O" = {
-          " " = ("insertText:", "𝗢");
+          " " = ("insertText:", "𝑶");
         };
         "N" = {
-          " " = ("insertText:", "𝗡");
+          " " = ("insertText:", "𝑵");
         };
         "M" = {
-          " " = ("insertText:", "𝗠");
+          " " = ("insertText:", "𝑴");
         };
         "L" = {
-          " " = ("insertText:", "𝗟");
+          " " = ("insertText:", "𝑳");
         };
         "K" = {
-          " " = ("insertText:", "𝗞");
+          " " = ("insertText:", "𝑲");
         };
         "J" = {
-          " " = ("insertText:", "𝗝");
+          " " = ("insertText:", "𝑱");
         };
         "I" = {
-          " " = ("insertText:", "𝗜");
+          " " = ("insertText:", "𝑰");
         };
         "H" = {
-          " " = ("insertText:", "𝗛");
+          " " = ("insertText:", "𝑯");
         };
         "G" = {
-          " " = ("insertText:", "𝗚");
+          " " = ("insertText:", "𝑮");
         };
         "F" = {
-          " " = ("insertText:", "𝗙");
+          " " = ("insertText:", "𝑭");
         };
         "E" = {
-          " " = ("insertText:", "𝗘");
+          " " = ("insertText:", "𝑬");
         };
         "D" = {
-          " " = ("insertText:", "𝗗");
+          " " = ("insertText:", "𝑫");
         };
         "C" = {
-          " " = ("insertText:", "𝗖");
+          " " = ("insertText:", "𝑪");
         };
         "B" = {
-          " " = ("insertText:", "𝗕");
+          " " = ("insertText:", "𝑩");
         };
         "A" = {
-          " " = ("insertText:", "𝗔");
+          " " = ("insertText:", "𝑨");
         };
       };
     };
@@ -1525,165 +1525,166 @@
       };
     };
     "i" = {
-      "s" = {
-        "z" = {
-          " " = ("insertText:", "𝘻");
-        };
-        "y" = {
-          " " = ("insertText:", "𝘺");
-        };
-        "x" = {
-          " " = ("insertText:", "𝘹");
-        };
-        "w" = {
-          " " = ("insertText:", "𝘸");
-        };
-        "v" = {
-          " " = ("insertText:", "𝘷");
-        };
-        "u" = {
-          " " = ("insertText:", "𝘶");
-        };
-        "t" = {
-          " " = ("insertText:", "𝘵");
-        };
-        "s" = {
-          " " = ("insertText:", "𝘴");
-        };
-        "r" = {
-          " " = ("insertText:", "𝘳");
-        };
-        "q" = {
-          " " = ("insertText:", "𝘲");
-        };
-        "p" = {
-          " " = ("insertText:", "𝘱");
-        };
-        "o" = {
-          " " = ("insertText:", "𝘰");
-        };
-        "n" = {
-          " " = ("insertText:", "𝘯");
-        };
-        "m" = {
-          " " = ("insertText:", "𝘮");
-        };
-        "l" = {
-          " " = ("insertText:", "𝘭");
-        };
-        "k" = {
-          " " = ("insertText:", "𝘬");
-        };
-        "j" = {
-          " " = ("insertText:", "𝘫");
-        };
-        "i" = {
-          " " = ("insertText:", "𝘪");
-        };
-        "h" = {
-          " " = ("insertText:", "𝘩");
-        };
-        "g" = {
-          " " = ("insertText:", "𝘨");
-        };
-        "f" = {
-          " " = ("insertText:", "𝘧");
-        };
-        "e" = {
-          " " = ("insertText:", "𝘦");
-        };
-        "d" = {
-          " " = ("insertText:", "𝘥");
-        };
-        "c" = {
-          " " = ("insertText:", "𝘤");
-        };
-        "b" = {
-          " " = ("insertText:", "𝘣");
-        };
-        "a" = {
-          " " = ("insertText:", "𝘢");
-        };
-        "Z" = {
-          " " = ("insertText:", "𝘡");
-        };
-        "Y" = {
-          " " = ("insertText:", "𝘠");
-        };
-        "X" = {
-          " " = ("insertText:", "𝘟");
-        };
-        "W" = {
-          " " = ("insertText:", "𝘞");
-        };
-        "V" = {
-          " " = ("insertText:", "𝘝");
-        };
-        "U" = {
-          " " = ("insertText:", "𝘜");
-        };
-        "T" = {
-          " " = ("insertText:", "𝘛");
-        };
-        "S" = {
-          " " = ("insertText:", "𝘚");
-        };
-        "R" = {
-          " " = ("insertText:", "𝘙");
-        };
-        "Q" = {
-          " " = ("insertText:", "𝘘");
-        };
-        "P" = {
-          " " = ("insertText:", "𝘗");
-        };
-        "O" = {
-          " " = ("insertText:", "𝘖");
-        };
-        "N" = {
-          " " = ("insertText:", "𝘕");
-        };
-        "M" = {
-          " " = ("insertText:", "𝘔");
-        };
-        "L" = {
-          " " = ("insertText:", "𝘓");
-        };
-        "K" = {
-          " " = ("insertText:", "𝘒");
-        };
-        "J" = {
-          " " = ("insertText:", "𝘑");
-        };
-        "I" = {
-          " " = ("insertText:", "𝘐");
-        };
-        "H" = {
-          " " = ("insertText:", "𝘏");
-        };
-        "G" = {
-          " " = ("insertText:", "𝘎");
-        };
-        "F" = {
-          " " = ("insertText:", "𝘍");
-        };
-        "E" = {
-          " " = ("insertText:", "𝘌");
-        };
-        "D" = {
-          " " = ("insertText:", "𝘋");
-        };
-        "C" = {
-          " " = ("insertText:", "𝘊");
-        };
-        "B" = {
-          " " = ("insertText:", "𝘉");
-        };
-        "A" = {
-          " " = ("insertText:", "𝘈");
-        };
-      };
       "t" = {
+        "s" = {
+          "z" = {
+            " " = ("insertText:", "𝘻");
+          };
+          "y" = {
+            " " = ("insertText:", "𝘺");
+          };
+          "x" = {
+            " " = ("insertText:", "𝘹");
+          };
+          "w" = {
+            " " = ("insertText:", "𝘸");
+          };
+          "v" = {
+            " " = ("insertText:", "𝘷");
+          };
+          "u" = {
+            " " = ("insertText:", "𝘶");
+          };
+          "t" = {
+            " " = ("insertText:", "𝘵");
+          };
+          "s" = {
+            " " = ("insertText:", "𝘴");
+          };
+          "r" = {
+            " " = ("insertText:", "𝘳");
+          };
+          "q" = {
+            " " = ("insertText:", "𝘲");
+          };
+          "p" = {
+            " " = ("insertText:", "𝘱");
+          };
+          "o" = {
+            " " = ("insertText:", "𝘰");
+          };
+          "n" = {
+            " " = ("insertText:", "𝘯");
+          };
+          "m" = {
+            " " = ("insertText:", "𝘮");
+          };
+          "l" = {
+            " " = ("insertText:", "𝘭");
+          };
+          "k" = {
+            " " = ("insertText:", "𝘬");
+          };
+          "j" = {
+            " " = ("insertText:", "𝘫");
+          };
+          "i" = {
+            " " = ("insertText:", "𝘪");
+          };
+          "h" = {
+            " " = ("insertText:", "𝘩");
+          };
+          "g" = {
+            " " = ("insertText:", "𝘨");
+          };
+          "f" = {
+            " " = ("insertText:", "𝘧");
+          };
+          "e" = {
+            " " = ("insertText:", "𝘦");
+          };
+          "d" = {
+            " " = ("insertText:", "𝘥");
+          };
+          "c" = {
+            " " = ("insertText:", "𝘤");
+          };
+          "b" = {
+            " " = ("insertText:", "𝘣");
+          };
+          "a" = {
+            " " = ("insertText:", "𝘢");
+          };
+          "Z" = {
+            " " = ("insertText:", "𝘡");
+          };
+          "Y" = {
+            " " = ("insertText:", "𝘠");
+          };
+          "X" = {
+            " " = ("insertText:", "𝘟");
+          };
+          "W" = {
+            " " = ("insertText:", "𝘞");
+          };
+          "V" = {
+            " " = ("insertText:", "𝘝");
+          };
+          "U" = {
+            " " = ("insertText:", "𝘜");
+          };
+          "T" = {
+            " " = ("insertText:", "𝘛");
+          };
+          "S" = {
+            " " = ("insertText:", "𝘚");
+          };
+          "R" = {
+            " " = ("insertText:", "𝘙");
+          };
+          "Q" = {
+            " " = ("insertText:", "𝘘");
+          };
+          "P" = {
+            " " = ("insertText:", "𝘗");
+          };
+          "O" = {
+            " " = ("insertText:", "𝘖");
+          };
+          "N" = {
+            " " = ("insertText:", "𝘕");
+          };
+          "M" = {
+            " " = ("insertText:", "𝘔");
+          };
+          "L" = {
+            " " = ("insertText:", "𝘓");
+          };
+          "K" = {
+            " " = ("insertText:", "𝘒");
+          };
+          "J" = {
+            " " = ("insertText:", "𝘑");
+          };
+          "I" = {
+            " " = ("insertText:", "𝘐");
+          };
+          "H" = {
+            " " = ("insertText:", "𝘏");
+          };
+          "G" = {
+            " " = ("insertText:", "𝘎");
+          };
+          "F" = {
+            " " = ("insertText:", "𝘍");
+          };
+          "E" = {
+            " " = ("insertText:", "𝘌");
+          };
+          "D" = {
+            " " = ("insertText:", "𝘋");
+          };
+          "C" = {
+            " " = ("insertText:", "𝘊");
+          };
+          "B" = {
+            " " = ("insertText:", "𝘉");
+          };
+          "A" = {
+            " " = ("insertText:", "𝘈");
+          };
+          " " = ("insertText:", "𝑠");
+        };
         "z" = {
           " " = ("insertText:", "𝑧");
         };
@@ -1704,9 +1705,6 @@
         };
         "t" = {
           " " = ("insertText:", "𝑡");
-        };
-        "s" = {
-          " " = ("insertText:", "𝑠");
         };
         "r" = {
           " " = ("insertText:", "𝑟");

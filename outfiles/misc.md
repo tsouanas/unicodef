@@ -1,4 +1,4 @@
-## misc
+# misc (macro)
 | Sequence | Expansion |
 | :------- | :-------: |
 | ``eur`` | € |
@@ -7,3 +7,34 @@
 | ``yen`` | ¥ |
 | ``brl`` | R$ |
 | ``cent`` | ¢ |
+| ``coffin`` | ⚰ |
+| ``pirate`` | ☠ |
+| ``sun`` | ☀ |
+| ``cloud`` | ☁ |
+| ``umbrella`` | ☂ |
+| ``snowman`` | ☃ |
+| ``sham`` | ☘ |
+| ``toxic`` | ☢ |
+| ``biohaz`` | ☣ |
+| ``bphone`` | ☎ |
+| ``wphone`` | ☏ |
+| ``wflag`` | ⚐ |
+| ``bflag`` | ⚑ |
+| ``pentag`` | ⛤ |
+| ``bapho`` | ⛧ |
+| ``swords`` | ⚔ |
+| ``music`` | ♪ |
+| ``note`` | ♪ |
+| ``notes`` | ♫ |
+| ``checkb`` | ☐ |
+| ``checkc`` | ☑ |
+| ``checkx`` | ☒ |
+| ``flat`` | ♭ |
+| ``sharp`` | ♯ |
+| ``natu`` | ♮ |
+| ``qnote`` | ♩ |
+| ``enote`` | ♪ |
+| ``enotes`` | ♫ |
+| ``snotes`` | ♬ |
+| ``umbrel`` | ☂ |
+| ``snowma`` | ☃ |
