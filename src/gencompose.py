@@ -1,16 +1,11 @@
-# gencompose by Granitosaurus
-# https://github.com/Granitosaurus/macos-compose
+# Local, trimmed version of gencompose
+# For the original, see: https://github.com/Granitosaurus/macos-compose
 
 import json
 import re
 from collections.abc import MutableMapping
 from copy import deepcopy
 from typing import Union, Tuple, Callable, Type, Iterable, Dict
-
-import click
-import yaml
-from click import echo
-
 
 def key_nest(keys: Iterable) -> Dict:
     """
@@ -63,25 +58,6 @@ def object_hook(dict_, func: Callable, types: Union[Tuple[Type], Type] = dict):
             new[key] = func(new[key])
 
     return new
-
-
-@click.command()
-@click.argument('mappings', type=click.File(), nargs=-1)
-@click.option('--key', default='§', show_default=True, help='key to use as compose key')
-@click.option('-r', '--raw', is_flag=True, help='just keymap without prefix')
-def main(mappings, raw, key):
-    """Generate macos rebind file from compose json mapping"""
-    all_maps = {}
-    for mapping in mappings:
-        yamldata = yaml.load(mapping.read(), Loader=yaml.Loader)
-        all_maps.update(**{str(k): str(v) for k, v in yamldata.items()})
-    all_maps = read_paths(all_maps)
-    text = data_to_mac_dict(all_maps)
-    if raw:
-        echo(text)
-    else:
-        based = '{{"' + key + '" = {}}}'
-        echo(based.format(text))
 
 
 def merge(source, destination):
@@ -138,5 +114,3 @@ def data_to_mac_dict(data):
     text = re.sub('": ', '" = ', text)
     return text
 
-if __name__ == '__main__':
-    main()

@@ -1,26 +1,16 @@
 # unicodef.py
 
 import os
+import sys
 import re
-import yaml
 from glob import glob
 from gencompose import data_to_mac_dict, read_paths
-import click
-from click import echo
 
-# dict generator
+# global
 
-def gendict(yaml_in, dict_out):
-    yamldata = yaml.load(yaml_in.read(), Loader=yaml.Loader)
-    all_maps = {}
-    all_maps.update(**{str(k): str(v) for k, v in yamldata.items()})
-    all_maps = read_paths(all_maps)
-    text = data_to_mac_dict(all_maps)
-    based = f'{{"§" = {text}}}'
-    text = text.replace('"^" = ', r'"\\^" = ')
-    text = text.replace('"~" = ', r'"\\~" = ')
-    dict_out.write(text)
-    dict_out.write('\n')
+modes = ['macro', 'micro']
+book = dict(macro={}, micro={})
+chapters = {}
 
 # shared
 
@@ -30,9 +20,21 @@ def translate(translator, w):
 def simple_trans(reps):
     return lambda c: reps[c] if c in reps else c
 
+def error(msg, status=1, die=True):
+    print(f'ERROR: {msg}', file=sys.stderr)
+    if die:
+        sys.exit(status)
+
+def warn(msg):
+    print(f'Warning: {msg}', file=sys.stderr)
+
+def info(msg):
+    print(msg, file=sys.stderr)
+
+
 # XCompose
 
-xcompose_reps = {
+xcompose_k_reps = {
     '`': '<grave>',
     '~': '<asciitilde>',
     '!': '<exclam>',
@@ -52,7 +54,12 @@ xcompose_reps = {
     '"': '<quotedbl>',
     "'": '<apostrophe>',
     '/': '<slash>',
+    '?': '<question>',
     '\\': '<backslash>',
+    '[': '<bracketleft>',
+    ']': '<bracketright>',
+    '{': '<braceleft>',
+    '}': '<braceright>',
     '|': '<bar>',
     '<': '<less>',
     '>': '<greater>',
@@ -63,137 +70,184 @@ xcompose_reps = {
     ' ': '<space>',
     }
 
-def xcompose_trans(c):
-    if c in xcompose_reps:
-        return xcompose_reps[c]
+xcompose_v_reps = {
+    '"': '\\"',
+    '\\': '\\\\',
+    }
+
+
+def xcompose_trans_k(c):
+    if c in xcompose_k_reps:
+        return xcompose_k_reps[c]
     elif c.isascii() and c.isalnum():
         return f'<{c}>'
     else:
+        warn(f'Ignoring unexpected special character «{c}» on XCompose key.')
         return ''
 
-def micro_xcompose(k, v):
-    assert '"' not in v, f'double quote found in value «{v}» of key «{k}»'
-    return f'<Multi_key>{translate(xcompose_trans, k)} : "{v}"\n'
+xcompose_trans_v = simple_trans(xcompose_v_reps)
 
-def macro_xcompose(k, v):
-    assert '"' not in v, f'double quote found in value «{v}» of key «{k}»'
-    return f'<Multi_key><Multi_key>{translate(xcompose_trans, k)}<space> : "{v}"\n'
+def xcompose_line(k, v, mode):
+    k = translate(xcompose_trans_k, k)
+    v = translate(xcompose_trans_v, v)
+    if mode == 'micro':
+        line = f'<Multi_key>{k} : "{v}"\n'
+    else:
+        line = f'<Multi_key><Multi_key>{k}<space> : "{v}"\n'
+    return line
+
 
 # Vim
 
 vim_reps = { '|': '<Bar>' }
 vim_trans = simple_trans(vim_reps)
 
-def micro_vim(k, v):
-    return f'inoremap \\{translate(vim_trans, k)} {v}\n'
+def vim_line(k, v, mode):
+    k = translate(vim_trans, k)
+    v = translate(vim_trans, v)
+    if mode == 'micro':
+        line = f'inoremap \\{k} {v}\n'
+    else:
+        line = f'inoremap \\\\{k} {v}\n'
+    return line
 
-def macro_vim(k, v):
-    return f'inoremap \\\\{translate(vim_trans, k)} {v}\n'
 
 # Markdown
 
-def firstlines_md(df_name):
-    return [ f'## {df_name}\n',
+def md_header(title, level=1):
+    return ''.join([
+            f'{"#" * level} {title}\n',
              '| Sequence | Expansion |\n',
-             '| :------- | :-------: |\n'
-           ]
+             '| :------- | :-------: |\n',
+           ])
 
-def common_md(k, v):
+def md_line(k, v):
     return f'| ``{k}`` | {v} |\n'
 
-# Yaml
 
-yaml_reps = { "'": "''" }
-yaml_trans = simple_trans(yaml_reps)
+# macOS dict
 
-def micro_yaml(k, v):
-    return f"'{translate(simple_trans(yaml_reps), k)}': '{translate(simple_trans(yaml_reps), v)}'\n"
+def chapter_pydict(chapter, macosprefix='§'):
+    d = {}
+    for (k,v) in chapter['micro'].items():
+        d[k] = v
+    for (k,v) in chapter['macro'].items():
+        d[f'{macosprefix}{k} '] = v
+    return d
 
-def macro_yaml(k, v):
-    return f"'§{translate(simple_trans(yaml_reps), k)} ': '{translate(simple_trans(yaml_reps), v)}'\n"
+def pydict_macosdict(pydict, macosprefix='§'):
+    text = data_to_mac_dict(read_paths(pydict))
+    text = f'{{"{macosprefix}" = {text}}}\n'
+    text = text.replace('"^" = ', r'"\\^" = ')
+    text = text.replace('"~" = ', r'"\\~" = ')
+    return text
+
 
 # Processors
 
-writers = dict(
-    xcompose = dict(micro = micro_xcompose, macro = macro_xcompose, ext = '.XCompose', tee = True),
-    yaml     = dict(micro = micro_yaml,     macro = macro_yaml,     ext = '.yaml',     tee = True),
-    md       = dict(micro = common_md,      macro = common_md,      ext = '.md',       tee = True),
-    vim      = dict(micro = micro_vim,      macro = macro_vim,      ext = '.vim',      tee = True),
+langs = dict(
+    xcompose = dict(liner=xcompose_line, ext='.XCompose'),
+    vim      = dict(liner=vim_line,      ext='.vim'),
     )
 
-def df_kvs(df):
-    kvs = []
-    for line in df:
-        line = line.lstrip()
-        if line.startswith('#') or not line.rstrip(): continue
-        else:
-            # micro file
-            if df_mode(df) == 'micro':
-                k, v = re.split(': +', line.strip())
-                k, v = k[1:-1], v[1:-1]
-            # macro file
-            else:
-                line = line.strip('\u0020\n')
-                k, v = re.split(' +', line)
-            kvs.append((k,v))
-    return kvs
+def cf_name(cf):
+    return cf.name.split('/')[-1].lstrip('_')
 
-def df_name(df):
-    return df.name.split('/')[-1].rstrip('.yaml')
+def cf_mode(cf):
+    return 'micro' if cf.name.split('/')[-1].startswith('_') else 'macro'
 
-def df_mode(df):
-    return 'micro' if df.name.split('/')[-1].endswith('.yaml') else 'macro'
+def process_cf(cf, outdir):
+    """
+    Updates book and chapters global dicts by adding this cf's content.
+    Also appends to markdown files of cf's chapter and of the book.
+    """
+    global book
+    global chapters
+    mode = cf_mode(cf)
+    name = cf_name(cf)
+    # initialize chapter if new
+    if name not in chapters:
+        chapters[name] = dict(macro={}, micro={})
+    # open chapetr and book md files for appending
+    with open(f'{outdir}/{name}.md', 'a') as chap_md, \
+         open(f'{outdir}/unicodefs.md', 'a') as book_md:
+        # append headers to md files
+        chap_md.write(md_header(f'{name} ({mode})', level=1))
+        book_md.write(md_header(f'{name} ({mode})', level=2))
+        # process cs lines
+        for line in cf:
+            line = line.lstrip()
+            if line.startswith('#') or not line.rstrip(): continue
+            line = line.strip('\u0020\n')
+            k, v = re.split(' +', line)
+            # check for redefinitions
+            if k in book[mode]:
+                detail = f'to the same expansion: {v}' if v == book[mode][k] else f'{book[mode][k]} ↦ {v}'
+                warn(f'{mode} sequence «{k}» redefined in {name} ({detail})')
+            # update book and chapters
+            book[mode][k] = v
+            chapters[name][mode][k] = v
+            # append content to md files
+            chap_md.write(md_line(k, v))
+            book_md.write(md_line(k, v))
 
-def process_df(df, outdir):
-    kvs = df_kvs(df)
-    mode = df_mode(df)
-    name = df_name(df)
-    for (wlang, writer) in writers.items():
-        processor, ext, tee = writer[mode], writer['ext'], writer['tee']
-        firstlines = firstlines_md(name) if wlang == 'md' else []
-        lines = firstlines + [ processor(k,v) for (k,v) in kvs ]
-        if tee:
-            # write wlang chapter
-            with open(f'{outdir}/{name}{ext}', 'w') as chapter_wlang:
-                chapter_wlang.writelines(lines)
-        with open(f'{outdir}/unicodefs{ext}', 'a') as book_wlang:
-            book_wlang.writelines(lines)
+def process_chapter(chapter, name, outdir):
+    """
+    Creates and writes .XCompose, .dict, and .vim outfiles.
+    """
+    # write lang files for chapter
+    for (lang, writer) in langs.items():
+        liner, ext = writer['liner'], writer['ext']
+        lines = []
+        for mode in modes:
+            lines = lines + [ liner(k,v,mode) for (k,v) in chapter[mode].items() ]
+        # write lang chapter
+        with open(f'{outdir}/{name}{ext}', 'w') as chapter_lang:
+            chapter_lang.writelines(lines)
+    # create macosdict
+    with open(f'{outdir}/{name}.dict', 'w') as chapter_macosdict:
+        chapter_macosdict.write(pydict_macosdict(chapter_pydict(chapter)))
+
 
 # main
 
-@click.command()
-@click.argument('indir',  type=click.Path(exists=True))
-@click.argument('outdir', type=click.Path(exists=True))
-def main(indir, outdir):
+def main():
+
+    _, indir, outdir, *junk = sys.argv
+    if junk: error(f'Too many arguments (expected: 2; given: {len(junk)}).')
+    if not os.path.exists(indir):  error(f'{indir} does not exist.')
+    if not os.path.exists(outdir): error(f'{outdir} does not exist.')
+    if not os.path.isdir(indir):   error(f'{indir} exists, but is not a directory.')
+    if not os.path.isdir(outdir):  error(f'{outdir} exists, but is not a directory.')
 
     # clear outdir
     outfiles = os.listdir(outdir)
+
     for outfile in glob(f'{outdir}/*'):
         os.remove(outfile)
 
-    # initialize unicodefs.md
-    with open(f'{outdir}/unicodefs.md', 'w') as unicodefs_md:
-        unicodefs_md.write('# unicodefs\n\n')
+    # initialize unicodefs.markdown
+    with open(f'{outdir}/unicodefs.md', 'w') as book_md:
+        book_md.write('# unicodefs\n\n')
 
-    # assertions
-    defsfiles = os.listdir(indir)
-    assert 'unicodefs' not in defsfiles and 'unicodefs.yaml' not in defsfiles, 'You cannot name your input file "unicodefs".'
-    for defsfile in defsfiles:
-        assert f'{defsfile}.yaml' not in defsfiles, f'conflict: both {defsfile} and {defsfile}.yaml exist; pick distinct names!'
+    # assertion
+    chapfiles = glob(f'{indir}/*')
+    if ('unicodefs' in chapfiles) or ('_unicodefs' in chapfiles):
+        error(f'You cannot name your input file "unicodefs".')
 
-    # process def files
-    for defsfile in defsfiles:
-        echo(f"Processing {defsfile}.")
-        with open(f'{indir}/{defsfile}', 'r') as df:
-            process_df(df, outdir)
+    # process chaptfiles to create chapters and all markdown files
+    for chapfile in chapfiles:
+        info(f"Processing {chapfile}.")
+        with open(f'{chapfile}', 'r') as cf:
+            process_cf(cf, outdir)
 
-    # use gencompose to create dicts
-    echo(f"Creating dicts.")
-    for y in glob(f'{outdir}/*.yaml'):
-        with open(y, 'r') as yaml_in, \
-             open(y.replace('.yaml', '.dict'), 'w') as dict_out:
-            gendict(yaml_in, dict_out)
-        os.remove(y)
+    # add book as a chapter called 'unicodefs'
+    chapters['unicodefs'] = book
+
+    # process chapters to create output files (except markdown)
+    for (name, chapter) in chapters.items():
+        process_chapter(chapter, name, outdir)
+
 
 if __name__ == '__main__':
     main()
