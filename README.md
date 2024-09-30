@@ -16,7 +16,7 @@ Just place `unicodef.py` somewhere in your path.
 
 **tl;dr:** Just place the outfile(s) you want in the appropriate places and you're good to go.
 
-See [unicodefs-tsouanas] for examples of outfiles already compiled by unicodef.
+See [unicodef-tsouanas] for examples of outfiles already compiled by unicodef.
 Feel free to use them directly if you wish; there is no need to install the unicodef compiler to use them.
 
 **Beware.** You will need to restart your programs for changes to take effect,
@@ -127,9 +127,9 @@ each containing all defined sequences from your input files.  (Usually you shoul
 N.B.: this means that you cannot call any input file `unicodefs`.
 
 
-[unicodefs.md]:         outfiles/unicodefs.md
-[unicodefs-tsouanas]:   https://github.com/tsouanas/unicodef-tsouanas
-[ThaTeX]:               https://github.com/tsouanas/thatex
-[WinCompose]:           https://github.com/samhocevar/wincompose
-[Karabiner-Elements]:   https://karabiner-elements.pqrs.org/
+[unicodefs.md]:       outfiles/unicodefs.md
+[unicodef-tsouanas]:  https://github.com/tsouanas/unicodef-tsouanas
+[ThaTeX]:             https://github.com/tsouanas/thatex
+[WinCompose]:         https://github.com/samhocevar/wincompose
+[Karabiner-Elements]: https://karabiner-elements.pqrs.org/
 
