@@ -1,51 +1,42 @@
 # unicodef
 
-This project consist of:
+This program generates definitions of expandable sequences for use in
+Xorg (via XCompose), macOS, Windows (needs [WinCompose]), and Vim, usually to
+type unicode characters;
 
-* `unicodef.py`: a script that generates definitions of expandable sequences for use in Xorg (via XCompose), macOS, Windows (needs [WinCompose]), and Vim, usually to type unicode characters;
-* `defs/*`: my own (mostly [ThaTeX] influenced) definitions;
-* `outfiles/*`: the "compiled" outputs of my inputs, ready to use.
+See [unicodef-tsouanas] for my own defs and their compiled outputs as an example use.
 
-See [unicodefs.md] for a list of all sequences defined by the provided files in `defs/`.
+
+## Installation of unicodef
+
+Just place `unicodef.py` somewhere in your path.
 
 
 ## Installation of outfiles
 
 **tl;dr:** Just place the outfile(s) you want in the appropriate places and you're good to go.
-No other file is needed.
+
+See [unicodefs-tsouanas] for examples of outfiles already compiled by unicodef.
+Feel free to use them directly if you wish; there is no need to install the unicodef compiler to use them.
 
 **Beware.** You will need to restart your programs for changes to take effect,
 and if you have multiple windows of the same program running you may need to quit all of them.
 
+### for X11/Xorg (BSD, Linux, …)
 
-### for X11/Xorg
-
-Place `unicodefs.XCompose` somewhere (for example, in `~/.unicodef/`) and have your `.XCompose` include it:
+Place `unicodefs.XCompose` somewhere (for example, in `~/.unicodef/`) and have your `~/.XCompose` include it:
 ```
 include "%H/.unicodef/unicodefs.XCompose"
 ```
-In case you are not using a `.XCompose` file already, there is one provided in `examples/`.
+In case you are not using a `~/.XCompose` file already, there is one provided in `examples/`.
 
-Note that some programs might ignore `~/.XCompose`.  Hopefully you can make them behave by setting the environmental variables `$GTK_IM_MODULE` and `$QT_IM_MODULE` to `xim`.  For example, if you are using a sh-like shell:
-```
+Note that some programs might ignore `~/.XCompose`.  Hopefully you can make them behave
+by setting the environmental variables `$GTK_IM_MODULE` and `$QT_IM_MODULE` to `xim`.
+For example, if you are using a sh-like shell, add the following lines to your shell configuration file
+```sh
 export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
 ```
-
-### for macOS
-
-1. Install [Karabiner-Elements] and configure:  
-   Simple Modifications › For all devices › `right_command → non_us_backslash`.  
-   (`right_command` is under «Modifier keys» and `non_us_backslash` is under «Controls and symbols».)  
-   Note that your <kbd>RightCmd</kbd> key will not function as a command key anymore.
-   Feel free to choose some other key if you prefer.
-2. Run `git clone https://github.com/tsouanas/unicodef` to clone this repo, `cd` into it, and run `make macosinstall`.
-
-#### Warnings
-
-1. If you are already using a `DefaultKeyBinding.dict`, then `make macosinstall`
-   will overwrite the existing file, and `make macosuninstall` will delete it.
-2. Do not symlink `DefaultKeyBinding.dict`, as some macOS programs will end up ignoring them!
 
 ### for Windows
 
@@ -55,9 +46,27 @@ export QT_IM_MODULE=xim
 ### for Vim
 
 Place `unicodefs.vim` somewhere (for example, in `~/.unicodef/`) and have your `.vimrc` source it:
-```
+```vim
 source ~/.unicodef/unicodefs.vim
 ```
+
+### for macOS
+
+macOS does not use XCompose, so it needs some further setup:
+
+1. Install [Karabiner-Elements] and configure:  
+   Simple Modifications › For all devices › `right_command → non_us_backslash`.  
+   (`right_command` is under «Modifier keys» and `non_us_backslash` is under «Controls and symbols».)  
+   Note that your <kbd>RightCmd</kbd> key will not function as a command key anymore.
+   Feel free to choose some other key if you prefer.
+2. Create `~/Library/KeyBindings/DefaultKeyBinding.dict` if it does not exist:
+   ```sh
+   mkdir -p ~/Library/KeyBindings/DefaultKeyBinding.dict
+   ```
+3. Copy `unicodefs.dict` to `~/Library/KeyBindings/DefaultKeyBinding.dict`
+
+**Warning.**
+Do **NOT** symlink `DefaultKeyBinding.dict`, as a lot of macOS programs will end up ignoring it!
 
 
 ## Usage (typing)
@@ -88,62 +97,39 @@ See `defs/simple_` or `defs/thatex` for examples.
 Definitions in files whose names end with an underscore (`_`) are considered **micro**;
 otherwise they are **macro**.  (See above.)
 
-### Compiling defs
+
+## Usage (unicodef compiler)
 
 **Requirements:** you will need Python 3 installed.
 
 Once you are done editing your defs files, use `unicodef.py` to generate the output files.
-From within the `unicodef` directory run:
+For example:
 
 ```shell
-make
+unicodef.py defs/* outfiles
 ```
 
-This creates, for each input file φ under `defs/`, the files
+This creates under the directory `outfiles`, for each input file φ, the files
 
 * φ`.md`
 * φ`.XCompose`
 * φ`.dict`
 * φ`.vim`
 
-under `outfiles/` (to be used if separate inclusion is needed—rarely);
-as well as the files
+(to be used if separate inclusion is needed—rarely); as well as the files
 
 * `unicodefs.md`
 * `unicodefs.XCompose`
 * `unicodefs.dict`
 * `unicodefs.vim`
 
-that contain all defined sequences.  (Usually you should just use these ones.)
+each containing all defined sequences from your input files.  (Usually you should just use these ones.)
 N.B.: this means that you cannot call any input file `unicodefs`.
 
-To update your files from the new outfiles run:
 
-```shell
-make install
-```
-
-on traditional Unix systems or
-
-```shell
-make macosinstall
-```
-
-on macOS.
-
-#### Using make(1):
-
-Inside the `unicodef` directory you can run:
-
-* `make` runs `unicodef.py` on `defs/` generating files at `outfiles/`;
-* `make install` copies all oufiles to `~/.unicodef/`;
-* `make uninstall` removes `~/.unicodef/`;
-* `make macosinstall` installs then copies `unicodefs.dict` to `~/Library/KeyBindings/DefaultKeyBinding.dict`;
-* `make macosuninstall` uninstalls and also removes `~/Library/KeyBindings/DefaultKeyBinding.dict`;
-* `make clean` removes all outfiles.
-
-[unicodefs.md]: outfiles/unicodefs.md
-[ThaTeX]:       https://github.com/tsouanas/thatex
-[WinCompose]:   https://github.com/samhocevar/wincompose
-[Karabiner-Elements]: https://karabiner-elements.pqrs.org/
+[unicodefs.md]:         outfiles/unicodefs.md
+[unicodefs-tsouanas]:   https://github.com/tsouanas/unicodef-tsouanas
+[ThaTeX]:               https://github.com/tsouanas/thatex
+[WinCompose]:           https://github.com/samhocevar/wincompose
+[Karabiner-Elements]:   https://karabiner-elements.pqrs.org/
 
