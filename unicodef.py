@@ -206,8 +206,10 @@ def vim_head(h):
 # Markdown
 
 md_reps = {
-    '`': '\\`',
-    '|': '\\|'
+    '`': '&#96;',
+    '|': '&vert;',
+    '<': '&lt;',
+    '>': '&gt;',
     }
 md_trans = simple_trans(md_reps)
 
@@ -220,7 +222,7 @@ def md_caption(title, level=1):
 def md_line(k, v):
     k = translate(md_trans, k)
     v = translate(md_trans, v)
-    return f'| `{k}` | {v} |\n'
+    return f'| <code>{k}</code> | {v} |\n'
 
 
 # macOS dict
