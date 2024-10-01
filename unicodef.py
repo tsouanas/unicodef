@@ -352,6 +352,13 @@ def main():
     for (name, chapter) in chapters.items():
         process_chapter(chapter, name, outdir)
 
+    # check for micro conflicts
+    micro_keys = list(book['micro'].keys())
+    micro_keys.sort()
+    for k, l in zip(micro_keys, micro_keys[1:]):
+        if l.startswith(k):
+            warn(f'micro conflict: «{k}» conflicts with «{l}»)')
+
 
 if __name__ == '__main__':
     main()
