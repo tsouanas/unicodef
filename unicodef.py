@@ -280,11 +280,14 @@ def process_cf(cf, outdir):
         chap_md.write(md_caption(f'{name} ({mode})', level=1))
         book_md.write(md_caption(f'{name} ({mode})', level=2))
         # process cs lines
-        for line in cf:
+        for line_no, line in enumerate(cf, start=1):
             line = line.lstrip()
             if line.startswith('#') or not line.rstrip(): continue
             line = line.strip('\u0020\n')
-            k, v = re.split(' +', line)
+            try:
+                k, v = re.split(' +', line)
+            except ValueError:
+                error(f'Cannot parse line {line_no} of {mode} file {name}:\n{line}\n')
             # check for redefinitions
             if k in book[mode]:
                 detail = f'to the same expansion: {v}' if v == book[mode][k] else f'{book[mode][k]} ↦ {v}'
@@ -357,7 +360,7 @@ def main():
     micro_keys.sort()
     for k, l in zip(micro_keys, micro_keys[1:]):
         if l.startswith(k):
-            warn(f'micro conflict: «{k}» conflicts with «{l}»)')
+            error(f'micro conflict: «{k}» conflicts with «{l}»)', die=False)
 
 
 if __name__ == '__main__':
