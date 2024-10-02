@@ -1,1 +1,2 @@
-* Sequences of length longer than 6 do not work in XCompose.
+Sequences of length longer than 9 do not work in XCompose, which means
+that the maximum macro sequence for unicodef is 6.
