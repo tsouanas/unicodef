@@ -14,15 +14,17 @@ Just place `unicodef.py` somewhere in your path.
 
 ## Installation of outfiles
 
-**tl;dr:** Just place the outfile(s) you want in the appropriate places and you're good to go.
+**tl;dr:** Just place the outfile(s) you want (or their content) in the
+appropriate place and you are good to go.
 
-See [unicodef-thatex] for examples of outfiles already compiled by unicodef.
+See [unicodef-thatex] for examples of outfiles already compiled by unicodef (under its `outfiles/` directory),
+along with the input defs files that were used to produce them (under its `defs/`).
 Feel free to use them directly if you wish; there is no need to install the unicodef compiler to use them.
 
 **Beware.** You will need to restart your programs for changes to take effect,
 and if you have multiple windows of the same program running you may need to quit all of them.
 
-### for X11/Xorg (BSD, Linux, …)
+### …for X11/Xorg (BSD, Linux, …)
 
 Place `unicodefs.XCompose` somewhere (for example, in `~/.unicodef/`) and have your `~/.XCompose` include it:
 ```
@@ -38,19 +40,19 @@ export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
 ```
 
-### for Windows
+### …for Windows
 
 1. Install [WinCompose].
 2. The `include` command works, so the same instructions apply as for Xorg, mutatis mutandis.
 
-### for Vim
+### …for Vim
 
 Place `unicodefs.vim` somewhere (for example, in `~/.unicodef/`) and have your `.vimrc` source it:
 ```vim
 source ~/.unicodef/unicodefs.vim
 ```
 
-### for macOS
+### …for macOS
 
 macOS does not use XCompose, so it needs some further setup:
 
@@ -86,24 +88,28 @@ E.g.: Typing <kbd>Compose</kbd><kbd>Compose</kbd><kbd>n</kbd><kbd>a</kbd><kbd>t<
 * **In Vim** (in INSERT MODE) use <kbd> \ </kbd>: e.g., typing `f : \\nats \\to \\nats` you get `f : ℕ → ℕ`.
 
 
-## Editing or creating your own defs
-
-Sequences are defined by files under `defs/`; the file format is very simple:
-each line is a sequence, followed by one or more spaces, followed by its expansion.
-You may have blank lines and a `#` at the beginning of a line indicates a comment.
-
-See `defs/simple_` or `defs/thatex` for examples.
-
-Definitions in files whose names end with an underscore (`_`) are considered **micro**;
-otherwise they are **macro**.  (See above.)
-
-
 ## Usage (unicodef compiler)
 
 **Requirements:** you will need Python 3 installed.
 
+### Editing or creating your own defs
+
+The so-called defs are defined in files; the file format is very simple:
+each line is a sequence, followed by one or more spaces, followed by its expansion.
+You may have blank lines and a `#` at the beginning of a line indicates a comment.
+
+Definitions in files whose names end with an underscore (`_`) are considered **micro**;
+otherwise they are **macro**.  (See above for the difference in use.)
+
+See the directory `defs/` of [unicodef-thatex] for examples of input defs files;
+and the directory `outfiles/` of [unicodef-thatex] for examples of (generated) output files.
+
+### Compiling your defs
+
 Once you are done editing your defs files, use `unicodef.py` to generate the output files.
-For example:
+
+For example, if you have your input files in a directory `defs/` and want the generated files
+to be written in a directory `outfiles/`, run:
 
 ```shell
 unicodef.py defs/* outfiles
