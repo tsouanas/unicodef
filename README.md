@@ -1,8 +1,8 @@
 # unicodef
 
 This program generates definitions of expandable sequences for use in
-Xorg (via XCompose), macOS, Windows (needs [WinCompose]), and Vim, usually to
-type unicode characters;
+Xorg (via XCompose), macOS (via [Karabiner-Elements]),
+Windows (via [WinCompose]), and Vim, usually to type unicode characters;
 
 See [unicodef-thatex] for my own defs and their compiled outputs as an example use.
 
