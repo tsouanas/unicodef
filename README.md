@@ -26,31 +26,32 @@ and if you have multiple windows of the same program running you may need to qui
 
 ### …for X11/Xorg (BSD, Linux, …)
 
-Place `unicodefs.XCompose` somewhere (for example, in `~/.unicodef/`) and have your `~/.XCompose` include it:
+Place `unicodefs.XCompose` somewhere (for example, in `~/.unicodef/`) and have your
+`~/.XCompose` include it.  Make sure you include first the locale-specific Compose
+file of your system if you want to access its definitions as well.
+An example `~/.XCompose` file:
 ```
+# locale-specific default Compose file
+include "%L"
+
+# unicodef
 include "%H/.unicodef/unicodefs.XCompose"
 ```
-In case you are not using a `~/.XCompose` file already, there is one provided in `examples/`.
 
 Note that some programs might ignore `~/.XCompose`.  Hopefully you can make them behave
-by setting the environmental variables `$GTK_IM_MODULE` and `$QT_IM_MODULE` to `xim`.
+by setting the environmental variables `$GTK_IM_MODULE` and `$QT_IM_MODULE` to `xim`,
+and `$XMODIFIERS` to `@im=none`.
 For example, if you are using a sh-like shell, add the following lines to your shell configuration file
 ```sh
 export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
+export XMODIFIERS="@im=none"
 ```
 
 ### …for Windows
 
 1. Install [WinCompose].
 2. The `include` command works, so the same instructions apply as for Xorg, mutatis mutandis.
-
-### …for Vim
-
-Place `unicodefs.vim` somewhere (for example, in `~/.unicodef/`) and have your `.vimrc` source it:
-```vim
-source ~/.unicodef/unicodefs.vim
-```
 
 ### …for macOS
 
@@ -70,6 +71,13 @@ macOS does not use XCompose, so it needs some further setup:
 **Warning.**
 Do **NOT** symlink `DefaultKeyBinding.dict`, as a lot of macOS programs will end up ignoring it!
 
+
+### …for Vim
+
+Place `unicodefs.vim` somewhere (for example, in `~/.unicodef/`) and have your `.vimrc` source it:
+```vim
+source ~/.unicodef/unicodefs.vim
+```
 
 ## Usage (typing)
 
