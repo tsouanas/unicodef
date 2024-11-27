@@ -57,20 +57,49 @@ export XMODIFIERS="@im=none"
 
 macOS does not use XCompose, so it needs some further setup:
 
-1. Install [Karabiner-Elements] and configure:  
-   Simple Modifications › For all devices › `right_command → non_us_backslash`.  
-   (`right_command` is under «Modifier keys» and `non_us_backslash` is under «Controls and symbols».)  
-   Note that your <kbd>RightCmd</kbd> key will not function as a command key anymore.
-   Feel free to choose some other key if you prefer.
-2. Create `~/Library/KeyBindings/DefaultKeyBinding.dict` if it does not exist:
+1. Install [Karabiner-Elements] and configure it (see below).
+2. Create `~/Library/KeyBindings` if it does not exist:
    ```sh
-   mkdir -p ~/Library/KeyBindings/DefaultKeyBinding.dict
+   mkdir -p ~/Library/KeyBindings
    ```
 3. Copy `unicodefs.dict` to `~/Library/KeyBindings/DefaultKeyBinding.dict`
+4. Reboot(!)
 
 **Warning.**
-Do **NOT** symlink `DefaultKeyBinding.dict`, as a lot of macOS programs will end up ignoring it!
+Do **NOT** symlink `DefaultKeyBinding.dict`, since this makes a lot of macOS programs ignore it!
 
+#### Karabiner-Elements configuration
+
+The idea is to sacrifice one key so that every time it is pressed
+it sends the special character `§` which unicodef uses by default
+as a "leader" for micros and macros.
+
+A good option is to sacrifice the <kbd>RightCmd ⌘</kbd> key.
+Note that your <kbd>RightCmd ⌘</kbd> key will not function as a command key anymore.
+Feel free to choose some other key if you prefer.
+
+You set up these modifications under the following settings path:
+
+   Setting › Simple Modifications › For all devices
+
+(If you want a per-keyboard configuration, select a specific keyboard instead of «For all devices».)
+
+Exactly which modification will work for you depends on your keyboard type and on your macOS version.
+
+The following options are known to work for certain combination:
+
+* Option 1: `right_command → grave_accent_and_tilde`;
+* Option 2: `right_command → non_us_backslash`;
+* Option 3: `right_command → non_us_backslash` AND `non_us_backslash → grave_accent_and_tilde`.
+
+`right_command` is under «Modifier keys»;  
+`non_us_backslash` and `grave_accent_and_tilde` are under «Controls and symbols».
+
+After setting this up, restart Karabiner-Elements from its menu,
+quit (completely, as in `⌘-Q`) a program in which you want to test this (for example the Terminal),
+launch the program from scratch, and press your <kbd>RightCmd ⌘</kbd> key once.
+You should see a `§` printed on your terminal.
+Complete the rest of the steps above.
 
 ### …for Vim
 
