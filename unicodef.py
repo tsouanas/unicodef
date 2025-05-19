@@ -240,6 +240,9 @@ def pydict_macosdict(pydict, macosprefix='§'):
     text = f'{{"{macosprefix}" = {text}}}\n'
     text = text.replace('"^" = ', r'"\\^" = ')
     text = text.replace('"~" = ', r'"\\~" = ')
+    text = text.replace('"@" = ', r'"\\@" = ')
+    text = text.replace('"#" = ', r'"\\#" = ')
+    text = text.replace('"$" = ', r'"\\$" = ')
     return text
 
 def macosdict_head(h):
