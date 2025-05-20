@@ -17,18 +17,21 @@ Just place `unicodef.py` somewhere in your path.
 **tl;dr:** Just place the outfile(s) you want (or their content) in the
 appropriate place and you are good to go.
 
-See [unicodef-thatex] for examples of outfiles already compiled by unicodef (under its `outfiles/` directory),
-along with the input defs files that were used to produce them (under its `defs/`).
-Feel free to use them directly if you wish; there is no need to install the unicodef compiler to use them.
+See [unicodef-thatex] for examples of outfiles already compiled by unicodef
+(under its `outfiles/` directory), along with the input defs files that were
+used to produce them (under its `defs/`).
+Feel free to use them directly if you wish; there is no need to install the
+unicodef compiler to use them.
 
-**Beware.** You will need to restart your programs for changes to take effect,
-and if you have multiple windows of the same program running you may need to quit all of them.
+**N.B.:** You will need to restart your programs for changes to take effect,
+and if you have multiple windows of the same program running you may need to
+quit all of them.
 
 ### …for X11/Xorg (BSD, Linux, …)
 
-Place `unicodefs.XCompose` somewhere (for example, in `~/.unicodef/`) and have your
-`~/.XCompose` include it.  Make sure you include first the locale-specific Compose
-file of your system if you want to access its definitions as well.
+Place `unicodefs.XCompose` somewhere (for example, in `~/.unicodef/`) and have
+your `~/.XCompose` include it.  Make sure you include first the locale-specific
+Compose file of your system if you want to access its definitions as well.
 An example `~/.XCompose` file:
 ```
 # locale-specific default Compose file
@@ -134,6 +137,8 @@ E.g.: Typing <kbd>Compose</kbd><kbd>Compose</kbd><kbd>n</kbd><kbd>a</kbd><kbd>t<
 The so-called defs are defined in files; the file format is very simple:
 each line is a sequence, followed by one or more spaces, followed by its expansion.
 You may have blank lines and a `#` at the beginning of a line indicates a comment.
+To add inline comments with `#` make sure it is following a space after the expansion
+(otherwise the `#` symbol is considered to be part of that expansion).
 
 Definitions in files whose names end with an underscore (`_`) are considered **micro**;
 otherwise they are **macro**.  (See above for the difference in use.)
@@ -167,7 +172,7 @@ This creates under the directory `outfiles`, for each input file φ, the files
 * `unicodefs.vim`
 
 each containing all defined sequences from your input files.  (Usually you should just use these ones.)
-N.B.: this means that you cannot call any input file `unicodefs`.
+**N.B.:** this means that you cannot call any input file `unicodefs`.
 
 
 [unicodefs.md]:       outfiles/unicodefs.md

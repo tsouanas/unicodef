@@ -288,9 +288,12 @@ def process_cf(cf, outdir):
             if line.startswith('#') or not line.rstrip(): continue
             line = line.strip('\u0020\n')
             try:
-                k, v = re.split(' +', line)
+                k, v = re.split(' +', line, maxsplit=1)
             except ValueError:
                 error(f'Cannot parse line {line_no} of {mode} file {name}:\n{line}\n')
+            # clean v from possible comment and whitespace
+            v = v.split(' #')[0]
+            v = v.strip('\u0020\n')
             # check for redefinitions
             if k in book[mode]:
                 detail = f'to the same expansion: {v}' if v == book[mode][k] else f'{book[mode][k]} ↦ {v}'
