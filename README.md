@@ -50,6 +50,7 @@ export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
 export XMODIFIERS="@im=none"
 ```
+**N.B.:** If you are not using `xim` alter the above lines accordingly.
 
 ### …for Windows
 
