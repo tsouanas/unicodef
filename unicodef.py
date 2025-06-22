@@ -292,7 +292,8 @@ def md_caption(title, level=1):
 def md_line(k, v):
     k = translate(md_trans, k)
     v = translate(md_trans, v)
-    return f"| <code>{k}</code> | {v} |\n"
+    esc = '\\' if k.endswith('\\') else ''
+    return f"| <code>{k}{esc}</code> | {v} |\n"
 
 
 # macOS dict
