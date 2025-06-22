@@ -4,7 +4,6 @@ import os
 import sys
 import re
 import argparse
-from glob import glob
 
 ### gencompose
 # Local, trimmed, stripped down, abused version of gencompose
