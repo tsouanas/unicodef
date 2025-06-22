@@ -147,6 +147,21 @@ otherwise they are **macro**.  (See above for the difference in use.)
 See the directory `defs/` of [unicodef-thatex] for examples of input defs files;
 and the directory `outfiles/` of [unicodef-thatex] for examples of (generated) output files.
 
+#### Custom contexts
+
+The format described above makes it impossible for an expansion
+to begin or to end with a space character.  To achieve such expansions you can use
+the unicodef directive `#@[… ]` like so:
+after the expansion place `@[𝑎X𝑧]` in a comment where `𝑎` and `𝑧` are strings
+not including the character `X` (case sensitive).
+
+For example, to have an expansion start with the space character, use `@[ X]`
+(here `𝑎` is ` ` and `𝑧` is the empty string);
+to have an expansion end with two space characters, use `@[X  ]`.
+
+This is especially useful if you want to apply a combining character on the actual
+space character and have the resulting character as (part of) the expansion.
+
 ### Compiling your defs
 
 Once you are done editing your defs files, use `unicodef.py` to generate the output files.
@@ -172,7 +187,8 @@ This creates under the directory `outfiles`, for each input file φ, the files
 * `unicodefs.dict`
 * `unicodefs.vim`
 
-each containing all defined sequences from your input files.  (Usually you should just use these ones.)
+each containing all defined sequences from your input files.
+(Usually you should just use these ones.)
 **N.B.:** this means that you cannot call any input file `unicodefs`.
 
 

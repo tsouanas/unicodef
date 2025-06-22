@@ -357,17 +357,33 @@ def process_cf(cf, outdir):
         book_md.write(md_caption(f"{name} ({mode})", level=2))
         # process cs lines
         for line_no, line in enumerate(cf, start=1):
+            # strip leading whitespace
             line = line.lstrip()
+            # skip blank or #-starting lines
             if line.startswith("#") or not line.rstrip():
                 continue
+            # strip (common) space and newline
             line = line.strip("\u0020\n")
+            # parse line into k, vc
+            kv_splitre = ' +'
             try:
-                k, v = re.split(" +", line, maxsplit=1)
+                k, v = re.split(kv_splitre, line, maxsplit=1)
             except ValueError:
                 error(f"Cannot parse line {line_no} of {mode} file {name}:\n{line}\n")
-            # clean v from possible comment and whitespace
-            v = v.split(" #")[0]
-            v = v.strip("\u0020\n")
+            # check for inline comments in v
+            vc_splitre = ' +#'
+            v, *c = re.split(vc_splitre, v, maxsplit=1)
+            c = "".join(c)
+            # strip v and c of spaces and newline
+            v, c = v.strip("\u0020\n"), c.strip("\u0020\n")
+            # apply custom context to v if any indicated by the @[ directive
+            if '@[' in c:
+                ctxpattern = re.compile('@\\[([^X]*?)X([^X]*?)\\]')
+                try:
+                    [(vprefix, vpostfix)] = ctxpattern.findall(line)
+                    v = f"{vprefix}{v}{vpostfix}"
+                except ValueError:
+                    warn(f'ignoring unparseable unicodef directive @[ at line {line_no} of {name}.')
             # check for redefinitions
             if k in book[mode]:
                 detail = (
