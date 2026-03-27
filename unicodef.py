@@ -215,6 +215,7 @@ xcompose_k_greek_reps = {
     "π": "<Greek_pi>",
     "ρ": "<Greek_rho>",
     "σ": "<Greek_sigma>",
+    "ς": "<Greek_finalsmallsigma>",
     "τ": "<Greek_tau>",
     "υ": "<Greek_upsilon>",
     "φ": "<Greek_phi>",
